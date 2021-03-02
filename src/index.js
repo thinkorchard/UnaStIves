@@ -10,8 +10,10 @@ import './sass/front-end-bunde.scss'
 import "./js/core/events"
 import "./js/core/objectfitFallback"
 import "./js/core/sidebar"
-import "./js/core/navigation"
+
 import "./js/core/panel-left"
+import "./js/core/jquery.menu-aim"
+import "./js/core/una-navigation"
 import "./js/core/smooth-scroll"
 import "./js/core/icons"
 import "./js/core/responsive-iframe"

@@ -23,9 +23,9 @@
   //when there is a menu its ul.menu and when its defaulting to pages its .menu ul...annoying
   .menu,
   .menu > ul {
-    display: flex;
-    flex-direction: column;
-
+    //display: flex;
+    //flex-direction: column;
+    width: 33vw;
     li {
       position: relative;
       margin: 0;
@@ -51,6 +51,8 @@
         flex-grow: 1;
         flex-shrink: 0;
         font-size: inherit;
+        letter-spacing: 3px;
+        text-transform: uppercase;
       }
 
       // > icon for submenu button layout
@@ -74,6 +76,7 @@
       width: auto;
       white-space: nowrap;
       padding: 0;
+      background-color: #8787ba;
 
       //vertical inner items inner submenu items over a bit as they are listed down
       .menu-item-link {
@@ -81,8 +84,16 @@
       }
     }
 
+    .current-menu-item {
+      position: relative;
+    }
+
     .current-menu-item > .sub-menu {
       display: block;
+      position: absolute;
+      width: 67vw;
+      left: 33vw;
+      top: 0;
     }
 
   }

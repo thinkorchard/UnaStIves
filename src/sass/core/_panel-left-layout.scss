@@ -35,16 +35,15 @@
 }
 
 .menu-open #panel-left, #panel-left.open {
-	flex-basis: var(--panel-left-width);
-	flex-shrink: 0;
 	transform: translate(0, 0);
+  width: 100vw;
+  z-index: 99;
 }
 
 //if left panel starts open, leave open until mobile, and hide button till mobile
 @media(min-width: $media-nav) {
 	#panel-left.stay-open {
 		flex-basis: var(--panel-left-width);
-		flex-shrink: 0;
 		transform: translate(0, 0);
 
 		& ~ .panel-left-toggle, & ~ .site .panel-left-toggle {
@@ -75,7 +74,6 @@
 	line-height: 0;
 	left: 0;
 	top: 0;
-	bottom: 0;
 	margin: 0;
 	padding: 0 15px;
 	outline: none;

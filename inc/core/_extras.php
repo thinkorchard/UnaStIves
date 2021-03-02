@@ -49,20 +49,20 @@ if ( ! function_exists( 'ign_google_fonts_url' ) ) {
  *
  * @return array
  */
-function ign_nav_menu_css_class( $classes, $item, $args, $depth ) {
-
-	if ( $item->menu_item_parent == 0 ) { //Count top level menu items
-		$classes[] = 'top-level-item';
-	}
-
-	if ( $depth >= 2 ) { //Count top level menu items
-		$classes[] = 'nested-menu-item';
-	}
-
-	return $classes;
-}
-
-add_filter( 'nav_menu_css_class', 'ign_nav_menu_css_class', 10, 4 );
+//function ign_nav_menu_css_class( $classes, $item, $args, $depth ) {
+//
+//	if ( $item->menu_item_parent == 0 ) { //Count top level menu items
+//		$classes[] = 'top-level-item';
+//	}
+//
+//	if ( $depth >= 2 ) { //Count top level menu items
+//		$classes[] = 'nested-menu-item';
+//	}
+//
+//	return $classes;
+//}
+//
+//add_filter( 'nav_menu_css_class', 'ign_nav_menu_css_class', 10, 4 );
 
 
 /**
@@ -73,20 +73,20 @@ add_filter( 'nav_menu_css_class', 'ign_nav_menu_css_class', 10, 4 );
  *
  * @return string
  */
-function ign_menu( $item, $args ) {
-
-	$classes = $args->classes;
-	$arrow   = '<div class="icon iconify icon-angle-right">' . ign_get_config('submenu_arrow_icon', '<svg xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' aria-hidden=\'true\' focusable=\'false\' width=\'1em\' height=\'1em\' style=\'-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);\' preserveAspectRatio=\'xMidYMid meet\' viewBox=\'0 0 32 32\'><path d=\'M22 16L12 26l-1.4-1.4l8.6-8.6l-8.6-8.6L12 6z\' fill=\'#626262\'/><rect x=\'0\' y=\'0\' width=\'32\' height=\'32\' fill=\'rgba(0, 0, 0, 0)\' /></svg>') . '</div>';
-
-	if ( in_array( 'menu-item-has-children', (array) $classes ) ) {
-		$item .= '<button tabindex="-1" class="submenu-dropdown-toggle">' . $arrow . '
-                    <span class="screen-reader-text">' . __( 'Expand child menu', 'una' ) . '</span></button>';
-	}
-
-	return '<div class="menu-item-link">' . $item . '</div>';
-}
-
-add_filter( 'walker_nav_menu_start_el', 'ign_menu', 10, 99 );
+//function ign_menu( $item, $args ) {
+//
+//	$classes = $args->classes;
+//	//$arrow   = '<div class="icon iconify icon-angle-right">' . ign_get_config('submenu_arrow_icon', '<svg xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' aria-hidden=\'true\' focusable=\'false\' width=\'1em\' height=\'1em\' style=\'-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);\' preserveAspectRatio=\'xMidYMid meet\' viewBox=\'0 0 32 32\'><path d=\'M22 16L12 26l-1.4-1.4l8.6-8.6l-8.6-8.6L12 6z\' fill=\'#626262\'/><rect x=\'0\' y=\'0\' width=\'32\' height=\'32\' fill=\'rgba(0, 0, 0, 0)\' /></svg>') . '</div>';
+//
+//	if ( in_array( 'menu-item-has-children', (array) $classes ) ) {
+//		$item .= '<button tabindex="-1" class="submenu-dropdown-toggle">' . '
+//                    <span class="screen-reader-text">' . __( 'Expand child menu', 'una' ) . '</span></button>';
+//	}
+//
+//	return '<div class="menu-item-link">' . $item . '</div>';
+//}
+//
+//add_filter( 'walker_nav_menu_start_el', 'ign_menu', 10, 99 );
 
 
 //add search bar to a menu

@@ -22,13 +22,7 @@
 #panel-left {
   //current menu and a toggled-open one
   .menu .current-menu-item, .menu li.toggled-on {
-    background: rgba(0, 0, 0, .3);
     color: white;
-
-    //top level item
-    > .menu-item-link {
-      background: rgba(0, 0, 0, .5);
-    }
   }
 }
 

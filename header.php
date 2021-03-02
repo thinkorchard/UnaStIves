@@ -25,11 +25,10 @@
 
 
 <?php
-$app_menu = ign_get_config("mobile_menu_type", 'regular_menu'); //accepts svg icon or 'app' which renders the special = to x
 
 ?>
 
-<body <?php body_class( $app_menu ); ?>>
+<body <?php body_class(); ?>>
 
 <a class="skip-link screen-reader-text" href="#site-content-skip">
 	<?php _e( 'Skip to content', 'una' ); ?>
@@ -37,24 +36,6 @@ $app_menu = ign_get_config("mobile_menu_type", 'regular_menu'); //accepts svg ic
 
 
 <div class="site-container" id="site-container">
-	<?php
-	$menu_icon = ign_get_config( 'menu_icon', 'icon-regular' );
-	if($menu_icon == 'icon-regular'){
-		$menu_icon = "<span class='$menu_icon'></span>";
-	}
-	?>
-
-
-
-    <div id="panel-left"></div>
-    <div id="panel-right"></div>
-
-	<button aria-haspopup="true" tabindex="1" id="panel-left-toggle" aria-label="Toggle Left Panel" class="panel-left-toggle" data-toggle="menu-open" data-target="body">
-		<span class="navigation-menu-icon"><?php echo $menu_icon; ?></span>
-		<span class="screen-reader-text">Open left Panel</span>
-	</button>
-
-
 
 
 

@@ -42,16 +42,11 @@ html * {
 # Panel Setup
 --------------------------------------------------------------*/
 .site-container {
-  display: flex;
   position: relative;
   overflow: hidden;
   background: inherit;
   > div {
-    z-index: 90;
     overflow: hidden;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
     transition: all .5s;
 
     &:empty {
