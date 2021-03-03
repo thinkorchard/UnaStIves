@@ -90,6 +90,7 @@ function una_setup() {
 	 */
 	register_nav_menus( array(
 		'top-menu' => __( 'Top Menu', 'una' ), //main menu at top.
+		'resort'    => __( 'Resort Menu', 'una' )
 	) );
 
 	/*
@@ -161,6 +162,35 @@ function una_setup() {
 }
 
 add_action( 'after_setup_theme', 'una_setup' );
+
+/*--------------------------------------------------------------
+# DISPLAY LIST OF CHILD PAGES ON PAGES
+--------------------------------------------------------------*/
+// Get top ancestor
+function get_top_ancestor_id() {
+
+	global $post;
+
+	if ($post->post_parent) {
+		$ancestors = array_reverse(get_post_ancestors($post->ID));
+		return $ancestors[0];
+
+	}
+
+	return $post->ID;
+
+}
+
+// Does page have children?
+function has_children() {
+
+	global $post;
+
+	$pages = get_pages('child_of=' . $post->ID);
+	return count($pages);
+
+}
+
 
 
 /*--------------------------------------------------------------
@@ -332,18 +362,18 @@ if ( ! function_exists( 'ign_widgets_init' ) ) {
 		register_sidebar( array(
 			'name'          => esc_html__( 'Footer', 'una' ),
 			'id'            => 'sidebar-2',
-			'description'   => esc_html__( 'Add footer widgets here.', 'pwm' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'description'   => esc_html__( 'Add footer widgets here.', 'una' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		) );
 
 
 		register_sidebar( array(
 			'name'          => esc_html__( 'Footer 2', 'una' ),
 			'id'            => 'sidebar-3',
-			'description'   => esc_html__( 'Add footer widgets here.', 'pwm' ),
+			'description'   => esc_html__( 'Add footer widgets here.', 'una' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -354,7 +384,7 @@ if ( ! function_exists( 'ign_widgets_init' ) ) {
 		register_sidebar( array(
 			'name'          => esc_html__( 'Footer 3', 'una' ),
 			'id'            => 'sidebar-4',
-			'description'   => esc_html__( 'Add footer widgets here.', 'pwm' ),
+			'description'   => esc_html__( 'Add footer widgets here.', 'una' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -364,7 +394,7 @@ if ( ! function_exists( 'ign_widgets_init' ) ) {
 		register_sidebar( array(
 			'name'          => esc_html__( 'Footer 4', 'una' ),
 			'id'            => 'sidebar-5',
-			'description'   => esc_html__( 'Add footer widgets here.', 'pwm' ),
+			'description'   => esc_html__( 'Add footer widgets here.', 'una' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

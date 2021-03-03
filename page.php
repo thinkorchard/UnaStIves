@@ -17,6 +17,40 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+        <div class="page-menu">
+            <div class="container">
+	            <?php
+
+		            if ( has_children() OR $post->post_parent > 0 ) { ?>
+
+                        <nav class="nav">
+
+
+
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a>
+                                </li>
+					            <?php
+
+						            $args = array(
+							            'child_of' => get_top_ancestor_id(),
+							            'title_li' => '',
+                                        'depth' => 2
+						            );
+
+					            ?>
+
+					            <?php wp_list_pages($args); ?>
+                            </ul>
+                        </nav>
+
+		            <?php } ?>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.page-menu -->
+
 		<main id="main" class="site-main" role="main">
 
 			<?php

@@ -14,8 +14,8 @@
 --------------------------------------------------------------*/
 :root {
   //Fonts. change to the fonts you want. Defaults to OS Fonts. Load google fonts via theme.config.json
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; //for headings etc..
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Cabin, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", Cabin, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; //for headings etc..
   --line-height: 1.5;
   --font-pre: 'Source Code Pro', monospace;
   --line-height-pre: 22px;
@@ -26,9 +26,10 @@
   --black: #191919;
   --dark-grey: #4c545d;
   --grey: #cacaca;
-  --blue: #007eac;
-  --light-blue: rgba(0, 185, 235, 0.73);
+  --blue: #282c51;
+  --light-blue: #60a5fe;
   --dark-blue: #007fb0;
+  --alt-blue: #0045b2;
 
 
   //Applied Colors. Add your own applied areas
@@ -36,7 +37,8 @@
   --main-text-color: var(--black); //used in various files
   --subtle-text-color: var(--grey); //used in forms.scss and page.scss
   --site-top: var(--dark-blue);
-  --footer-bg: var(--dark-grey); //found in page.scss
+  --footer-bg: var(--blue); //found in page.scss
+  --above-footer-bg: var(--light-blue); //found in page.scss
   --header-bg: var(--dark-grey); //found in page.scss
 
   //links and form buttons. used in typography.scss and forms.scss
@@ -83,4 +85,7 @@
   --z-index-behind: -1;
 }
 
-
+// Temp Height on Main element
+.site-main {
+  min-height: 90rem;
+}

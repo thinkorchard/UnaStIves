@@ -15,7 +15,8 @@
 </div><!-- #site-content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-		<?php ign_template('src/parts/global/site-footer.php'); ?>
+	<?php ign_template('src/parts/global/footer-widgets.php'); ?>
+	<?php ign_template('src/parts/global/site-footer.php'); ?>
 </footer><!-- #colophon -->
 
 </div><!-- #page -->

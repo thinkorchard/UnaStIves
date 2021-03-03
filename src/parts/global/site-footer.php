@@ -19,8 +19,8 @@
 
 
     <div class="site-info gutters text-center">
-        <a target="_blank" href="<?php echo esc_url( 'https://ignition.press/' ); ?>"><?php printf( __(
-				'© %s Created by %s with Ignition. Proudly powered by %s', 'una' ), date( 'Y' ), 'Eric', 'WordPress' ); ?></a>
+        <a target="_blank" href="<?php echo esc_url( 'https://thinkorchard.com/' ); ?>"><?php printf( __(
+				'© %s Created by %s @ ThinkOrchard. Proudly powered by %s', 'una' ), date( 'Y' ), 'Andy Brooks', 'WordPress' ); ?></a>
     </div><!-- .site-info -->
 
 </div>

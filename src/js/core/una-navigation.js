@@ -1,5 +1,6 @@
 (function($) {
 
+
     $(".dropdown-trigger").on("click", function (event) {
         event.preventDefault();
         toggleNav();
@@ -50,6 +51,12 @@
                 $(".is-active").removeClass("is-active");
             });
         }
+
+        // if (navIsVisible) {
+        //     $(document).keyup(function(e) {
+        //         if(e.which === 27) toggleNav();
+        //     })
+        // }
     }
 
 })( jQuery );

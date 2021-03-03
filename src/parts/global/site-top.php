@@ -11,15 +11,21 @@
 ?>
 
 <div class="site-top <?php echo ign_get_config( 'logo_position', 'logo-left' ); ?>">
-    <div class="site-top-container">
+	<?php
+
+		$header_type = get_field('header_type');
+		$page_header_image = get_field( 'page_header_image' );
+
+		if ( $header_type == 'image' ) :
+			if ( $page_header_image ) : ?>
+    <div class="site-top-container" style="background-image:url(<?php echo $page_header_image; ?>);">
+			<?php endif;
+		endif;
+	?>
+        <h1><?php the_title(); ?></h1>
+	    
         <div class="site-navigation horizontal-menu flex">
 
-	        <?php
-		        $menu_icon = ign_get_config( 'menu_icon', 'icon-regular' );
-		        if($menu_icon == 'icon-regular'){
-			        $menu_icon = "<span class='$menu_icon'></span>";
-		        }
-	        ?>
             <div class="dropdown-wrapper">
                 <button class="dropdown-trigger" aria-haspopup="true" tabindex="1" aria-label="Toggle Main Menu">
                     <svg viewBox="0 0 100 80" width="30" height="38" fill="#ffffff">
