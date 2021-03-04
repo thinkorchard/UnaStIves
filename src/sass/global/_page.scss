@@ -14,18 +14,31 @@ body {
 .site-logo {
   font-size: 3.3rem; //if its a text logo
   text-transform: uppercase;
-
+  position: absolute;
+  left: 50%;
+  top: 7.5rem;
+  width: 120px;
+  transform: translate(-70px, -50%);
+  z-index: var(--z-index-top);
 
   color: white;
-  max-width: 350px;
 
   svg, path, g {
-	fill: currentColor; //uses color above
+	fill: #fff; //uses color above
   }
-}
 
-.site-navigation .site-logo {
-  padding: 3px 0;
+  @media (min-width: 1024px) {
+    width: 160px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 180px;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
 }
 
 
@@ -42,15 +55,27 @@ body {
   min-height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 
   h1 {
     color: #fff;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(0%);
     letter-spacing: 8px;
+    margin: 0;
+
+    font-size: 3rem;
+
+    @media (min-width: 768px) {
+      font-size: 3.6rem;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -112,6 +137,17 @@ body {
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    h4 {
+      margin-top: 0;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    li,
+    p {
+      letter-spacing: 2px;
+    }
   }
 
   .site-info {
@@ -145,5 +181,65 @@ body {
     color: rgba(74, 58, 148, 0.82);
     text-shadow: 1px 1px white;
     margin-bottom: var(--gap);
+  }
+}
+
+.embed-container {
+
+  min-height: unset;
+
+  .site-navigation {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+  }
+
+  .dropdown-wrapper {
+    margin-top: 1rem;
+  }
+
+}
+
+.slider-container {
+  .site-navigation {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    z-index: var(--z-index-top);
+  }
+}
+
+.home .swiper-container {
+  width: 100%;
+  height: 90vh;
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  /* Center slide text vertically */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 5rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0;
   }
 }

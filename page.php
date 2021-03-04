@@ -28,15 +28,15 @@ get_header(); ?>
 
 
                             <ul class="sub-menu">
-                                <li>
-                                    <a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a>
-                                </li>
+<!--                                <li>-->
+<!--                                    <a href="--><?php //echo get_the_permalink(get_top_ancestor_id()); ?><!--">--><?php //echo get_the_title(get_top_ancestor_id()); ?><!--</a>-->
+<!--                                </li>-->
 					            <?php
 
 						            $args = array(
 							            'child_of' => get_top_ancestor_id(),
 							            'title_li' => '',
-                                        'depth' => 2
+                                        'depth' => 1
 						            );
 
 					            ?>

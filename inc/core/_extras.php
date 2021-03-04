@@ -230,7 +230,7 @@ function ign_logo() {
 
 	if ( is_front_page() ) {
 		//$logo is the custom logo wrapped in a link
-		return '<div class="site-logo"><h1 class="site-title">' . $logo . '</h1></div>';
+		return '<div class="site-logo"><span class="site-title">' . $logo . '</span></div>';
 	} else {
 		return '<div class="site-logo"><p class="site-title">' . $logo . '</p></div>';
 	}
