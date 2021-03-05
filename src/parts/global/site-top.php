@@ -77,6 +77,7 @@
 			            if ($set['width'] > 2400) continue;
 
 			            $css .= '
+			            .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');
 	@media only screen and (min-width: ' . $set['width'] . 'px) {
         .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');  } 
     }';
@@ -130,19 +131,16 @@
         </div>
         <!-- site-navigation -->
                         <div class="booking-wrapper">
-                            <button class="booking-trigger" aria-haspopup="true" tabindex="1" aria-label="Toggle Booking Menu">
-                                <span class="screen-reader-text">Open Booking Menu</span>
-                                Book now
-                            </button>
+
                             <nav class="book"
-                                 aria-label="<?php _e( 'Book', 'una' ); ?>">
+                                 aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
 
 			                    <?php wp_nav_menu( array(
+				                    'menu_class' => 'menu-booking',
 				                    'theme_location' => 'book',
 				                    'menu_id'        => 'book',
 				                    'container'      => '',
 				                    'fallback_cb'    => 'link_to_menu_editor',
-				                    'walker'         => new Una_Walker_Nav()
 			                    ) ); ?>
                             </nav>
                         </div>

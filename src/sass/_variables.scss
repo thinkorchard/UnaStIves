@@ -23,28 +23,35 @@
 
 
   //Colors. Add colors here
+  --white: #fff;
   --black: #191919;
-  --dark-grey: #4c545d;
-  --grey: #cacaca;
-  --blue: #282c51;
-  --light-blue: #60a5fe;
-  --dark-blue: #007fb0;
-  --alt-blue: #0045b2;
+  --dark-navy: #282c51;
+  --blue: #0045b2;
+  --light-blue: #60a5ff;
+  --mauve: #8787ba;
+  --purple: #aa479d;
+  --dark-pink: #ef307d;
+  --peach: #ff7d80;
+  --yellow: #ffcc00;
+  --mint-green: #06a9a6;
+  --orange: #f88001;
+  --red: #f52217;
+  --green: #099534;
 
 
   //Applied Colors. Add your own applied areas
-  --body-bg: white; //found in page.scss
+  --body-bg: var(--white); //found in page.scss
   --main-text-color: var(--black); //used in various files
   --subtle-text-color: var(--grey); //used in forms.scss and page.scss
-  --site-top: var(--dark-blue);
-  --footer-bg: var(--blue); //found in page.scss
+  --site-top: var(--dark-navy);
+  --footer-bg: var(--dark-navy); //found in page.scss
   --above-footer-bg: var(--light-blue); //found in page.scss
-  --header-bg: var(--dark-grey); //found in page.scss
+  --header-bg: var(--dark-navy); //found in page.scss
 
   //links and form buttons. used in typography.scss and forms.scss
   --highlight: var(--blue);
   --highlight-alpha: var(--light-blue);
-  --highlight-darkened: var(--dark-blue);
+  --highlight-darkened: var(--dark-navy);
 
   --overlay-color: rgba(0, 0, 0,0.65);
 
@@ -88,4 +95,144 @@
 // Temp Height on Main element
 .site-main {
   min-height: 90rem;
+}
+
+:root .editor-styles-wrapper .has-white-color,
+:root .has-white-color {
+  color: var(--white);
+}
+
+:root .editor-styles-wrapper .has-black-color,
+:root .has-black-color {
+  color: var(--black);
+}
+
+:root .editor-styles-wrapper .has-dark-navy-color,
+:root .has-dark-navy-color {
+  color: var(--dark-navy);
+}
+
+:root .editor-styles-wrapper .has-blue-color,
+:root .has-blue-color {
+  color: var(--blue);
+}
+
+:root .editor-styles-wrapper .has-light-blue-color,
+:root .has-light-blue-color {
+  color: var(--light-blue);
+}
+
+:root .editor-styles-wrapper .has-mauve-color,
+:root .has-mauve-color {
+  color: var(--mauve);
+}
+
+:root .editor-styles-wrapper .has-purple-color,
+:root .has-purple-color {
+  color: var(--purple);
+}
+
+:root .editor-styles-wrapper .has-dark-pink-color,
+:root .has-dark-pink-color {
+  color: var(--dark-pink);
+}
+
+:root .editor-styles-wrapper .has-peach-color,
+:root .has-peach-color {
+  color: var(--peach);
+}
+
+:root .editor-styles-wrapper .has-yellow-color,
+:root .has-yellow-color {
+  color: var(--yellow);
+}
+
+:root .editor-styles-wrapper .has-mint-green-color,
+:root .has-mint-green-color {
+  color: var(--mint-green);
+}
+
+:root .editor-styles-wrapper .has-orange-color,
+:root .has-orange-color {
+  color: var(--orange);
+}
+
+:root .editor-styles-wrapper .has-red-color,
+:root .has-red-color {
+  color: var(--red);
+}
+
+:root .editor-styles-wrapper .has-green-color,
+:root .has-green-color {
+  color: var(--green);
+}
+
+:root .editor-styles-wrapper .has-white-background-color,
+:root .has-white-background-color {
+  background-color: var(--white);
+}
+
+:root .editor-styles-wrapper .has-black-background-color,
+:root .has-black-background-color {
+  background-color: var(--black);
+}
+
+:root .editor-styles-wrapper .has-dark-navy-background-color,
+:root .has-dark-navy-background-color {
+  background-color: var(--dark-navy);
+}
+
+:root .editor-styles-wrapper .has-blue-background-color,
+:root .has-blue-background-color {
+  background-color: var(--blue);
+}
+
+:root .editor-styles-wrapper .has-light-bluebackground-color,
+:root .has-light-blue-background-color {
+  background-color: var(--light-blue);
+}
+
+:root .editor-styles-wrapper .has-mauvebackground-color,
+:root .has-mauve-background-color {
+  background-color: var(--mauve);
+}
+
+:root .editor-styles-wrapper .has-purple-background-color,
+:root .has-purple-background-color {
+  background-color: var(--purple);
+}
+
+:root .editor-styles-wrapper .has-dark-pink-background-color,
+:root .has-dark-pink-background-color {
+  background-color: var(--dark-pink);
+}
+
+:root .editor-styles-wrapper .has-peach-background-color,
+:root .has-peach-background-color {
+  background-color: var(--peach);
+}
+
+:root .editor-styles-wrapper .has-yellow-background-color,
+:root .has-yellow-background-color {
+  background-color: var(--yellow);
+}
+
+:root .editor-styles-wrapper .has-mint-green-background-color,
+:root .has-mint-green-background-color {
+  background-color: var(--mint-green);
+}
+
+:root .editor-styles-wrapper .has-orange-background-color,
+:root .has-orange-background-color {
+  background-color: var(--orange);
+}
+
+:root .editor-styles-wrapper .has-red-background-color,
+:root .has-red-background-color {
+  background-color: var(--red);
+}
+
+:root .editor-styles-wrapper .has-green-background-color,
+:root .has-green-background-color {
+  background-color: var(--green);
 }

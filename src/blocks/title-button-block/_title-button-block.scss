@@ -1,0 +1,24 @@
+.title-button {
+  text-align: center;
+
+  .button-una {
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    text-transform: uppercase;
+    transition: background-color .3s;
+
+    &:hover,
+    &:focus {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
