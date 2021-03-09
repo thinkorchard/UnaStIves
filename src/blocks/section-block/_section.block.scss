@@ -1,0 +1,12 @@
+.acf-section-block {
+  &.alignfull {
+    p {
+      max-width: 50%;
+      margin: 1.5rem auto;
+    }
+
+    h2 + p {
+      font-size: 1.8rem;
+    }
+  }
+}

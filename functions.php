@@ -80,6 +80,7 @@ function una_setup() {
 	 */
 	set_post_thumbnail_size( 300, 300, true );
 	add_image_size( 'header_image', 2000, 9999 );
+	add_image_size( 'villa-slide', 1200, 600, true );
 
 
 	add_filter( 'intermediate_image_sizes_advanced', 'remove_default_images' );
@@ -261,7 +262,7 @@ function una_scripts() {
 	wp_register_script( 'jquery-core', "https://code.jquery.com/jquery-3.5.1.min.js", array(), '3.5.1' );
 	wp_deregister_script( 'jquery-migrate' );
 	wp_register_script( 'jquery-migrate', "https://code.jquery.com/jquery-migrate-3.3.0.min.js", array( 'jquery-core' ), '3.3.0' );
-	wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper@6.4.15/swiper-bundle.min.js', array(), true );
+	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/swiper.min.js', array(), true );
 
 	//any javascript file in assets/js that ends with custom.js will be lumped into this file.
 	wp_enqueue_script( 'una-custom-js', get_template_directory_uri() . '/dist/frontEnd_bundle.js', array(
@@ -277,6 +278,8 @@ function una_scripts() {
 		'url'        => home_url(),
 		'currentUrl' => home_url( $wp->request )
 	) );
+
+	wp_enqueue_script( 'swiper' );
 
 
 	//Icons: add icons for use in custom js here

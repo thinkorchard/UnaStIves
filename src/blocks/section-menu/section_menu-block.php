@@ -23,7 +23,7 @@ if ( ! $container ) {
 		echo 'data-scrollanimation="fixed-at-top"';
 	} ?>>
         <div class="horizontal-menu <?php echo $container; ?>">
-            <nav>
+            <nav class="sticky-menu">
 				<?php
 				if ( get_field( 'menu' ) == 'menu' ) {
 					wp_nav_menu( array(

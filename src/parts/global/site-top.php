@@ -55,7 +55,7 @@
                 <div class="site-top-container slider-container">
 	                <?php echo ign_logo(); ?>
 	            <?php $counter = 0; if ( have_rows( 'page_header_slideshow' ) ) :
-                    echo '<div class="swiper-container">';
+                    echo '<div class="swiper-container hero-slider">';
 	                echo '<div class="swiper-wrapper">';
                     while ( have_rows( 'page_header_slideshow' ) ) : the_row();
 
@@ -74,7 +74,7 @@
 		            foreach ($srcset as $set) :
 
 			            // skip big ones
-			            if ($set['width'] > 2400) continue;
+			            if ($set['width'] > 2200) continue;
 
 			            $css .= '
 			            .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');

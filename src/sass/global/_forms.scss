@@ -32,9 +32,9 @@ input[type="datetime-local"],
 input[type="color"],
 input[type="file"],
 textarea {
-  border: 1px solid grey;
+  border: 1px solid var(--black);
   background: transparent;
-  color: var(--main-text-color);
+  color: var(--black);
   width: 100%;
   min-width: 0;
   font-size: inherit;
@@ -82,27 +82,27 @@ input[type="checkbox"] {
 # Buttons
 --------------------------------------------------------------*/
 .btn, .button, input[type="submit"] {
-  border: 1px solid transparent;
+  border: 1px solid var(--black);
   display: inline-block;
-  text-transform: capitalize;
-  background: var(--highlight);
-  padding: 5px 10px;
-  color: white;
+  text-transform: uppercase;
+  background: var(--white);
+  padding: .5rem 1.5rem;
+  color: var(--black);
   border-radius: 3px;
   transition: all .5s;
   cursor: pointer;
   box-shadow: none;
-  font-size: inherit;
+  font-size: 1.4rem;
 
   &:active, &:focus {
-    color: white;
-    background: var(--highlight-darkened);
+    color: var(--white);
+    background: var(--light-blue);
     box-shadow: 0 0 0 2px var(--highlight-alpha);
   }
 
   &:hover {
-    color: white;
-    background: var(--highlight-darkened);
+    color: var(--white);
+    background: var(--light-blue);
   }
 }
 

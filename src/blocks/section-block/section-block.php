@@ -17,7 +17,19 @@
         /* Add styles that use ACF values here */
         <?php if ( $section_bg ) : ?>background-color: <?php echo $section_bg; endif; ?>;
         padding:  8rem 1.5rem;
+
     }
+    <?php if ( $section_bg ) :
+    echo '#' . $block_id; ?> .button-una:link,
+    <?php echo '#' . $block_id; ?> .button-una:visited {
+        color: var(--white);
+    }
+
+    <?php echo '#' . $block_id; ?> .button-una:focus,
+    <?php echo '#' . $block_id; ?> .button-una:hover {
+       color: var(--black);
+    }
+    <?php endif; ?>
 </style>
 
 <section <?php ign_block_attrs( $block ); ?>>

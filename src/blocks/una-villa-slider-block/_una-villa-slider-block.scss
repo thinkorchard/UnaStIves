@@ -1,0 +1,112 @@
+/*--------------------------------------------------------------
+# Cards Slider Block
+--------------------------------------------------------------*/
+.acf-una-villa-slider-block {
+  position: relative;
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+}
+
+.villa {
+
+  &-slider {
+    z-index: 2;
+    width: 100%;
+    margin: 60px auto;
+
+    &__wrp {
+      align-items: center;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      transition: width .6s ease-in-out;
+      &.swiper-slide-active {
+        min-width: 360px;
+
+        @media (min-width: 768px) {
+          min-width: 420px;
+        }
+
+        @media (min-width: 1024px) {
+          min-width: 460px;
+        }
+
+        @media (min-width: 1366px) {
+          min-width: 560px;
+        }
+
+        @media (min-width: 1400px) {
+          min-width: 100rem;
+        }
+        @media (min-width: 1800px) {
+          min-width: 120rem;
+        }
+
+      }
+
+      &.swiper-slide-prev,
+      &.swiper-slide-next {
+        @media (min-width: 1400px) {
+          max-width: 30rem;
+        }
+      }
+    }
+
+    &__arrow {
+      background: #fff;
+      border: none;
+      display: inline-flex;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 26px 6px rgba(0,0,0,0.25);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      z-index: 12;
+      cursor: pointer;
+      outline: none!important;
+
+      &:focus {
+        outline: none!important;
+      }
+
+      .icon-font {
+        display: inline-flex;
+      }
+
+      &.news-slider-prev {
+        left: 15px;
+        transform: translateY(-50%);
+      }
+
+      &.news-slider-next {
+        right: 15px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__item {
+    padding: 0;
+    color: var(--black);
+    display: block;
+  }
+
+
+}
+
+
+.editor-styles-wrapper .acf-block-preview {
+  .news-slider__item.swiper-slide {
+    opacity: 1;
+  }
+
+  .news__img {
+    overflow: hidden;
+  }
+}
