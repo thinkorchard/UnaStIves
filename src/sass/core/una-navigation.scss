@@ -8,8 +8,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 5rem;
-  margin-top: 3.5rem;
-  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+
+  @media (min-width: 768px) {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+  }
 
   @media (min-width: 1024px) {
     margin-top: 4rem;
@@ -332,17 +337,17 @@
 }
 
 .booking-wrapper {
-  position: absolute;
-  top: 15rem;
-  right: 50%;
-  width: 15rem;
-  transform: translateX(40%);
+  width: 100%;
 
   z-index: var(--z-index-top);
   @media (min-width: 768px) {
-    top: 5rem;
+    position: absolute;
+    top: 2.5rem;
     right: 2.5rem;
     transform: translateX(0);
+    width: 15rem;
+    bottom: unset;
+    z-index: 101;
   }
 
   @media (min-width: 1024px) {
@@ -381,7 +386,7 @@
   > a:focus,
   > button {
     color: #fff;
-    background-color: var(--black);
+    background-color: var(--dark-navy);
   }
 
   li a {
@@ -390,7 +395,7 @@
     &:hover,
     &:focus {
       color: #fff;
-      background-color: var(--black);
+      background-color: var(--dark-navy);
     }
   }
 }
@@ -465,7 +470,7 @@
 .book .menu-item-has-children:hover button,
 .book .menu-item-has-children button:hover,
 .book .menu-item-has-children button:focus {
-  background: var(--black);
+  background: var(--dark-navy);
   color: #fff;
   border: none;
 }

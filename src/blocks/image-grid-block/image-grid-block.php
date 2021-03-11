@@ -19,13 +19,22 @@
 	$image_one_link = get_field( 'image_one_link' );
 	$image_two_link = get_field( 'image_two_link' );
 	$image_three_link = get_field( 'image_three_link' );
+	$lg_img_pos = get_field( 'large_image_position' );
 
 ?>
+
+<style type="text/css">
+    <?php if ( $lg_img_pos == 'left' ) : echo '.order' ?>  {
+    /* Add styles that use ACF values here */
+        order: 2
+    }
+    <?php endif; ?>
+</style>
 
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
-        <div class="span-6 grid">
+        <div class="span-6 grid order">
             <div class="span-12">
 		        <?php if ( $image_one_link ) : ?>
 			        <?php $post1 = $image_one_link; ?>
@@ -58,7 +67,7 @@
 
         </div>
         <!-- /.span-6 -->
-        <div class="span-6 three" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_three, $size ); ?>); background-size: cover;">
+        <div class="span-6 three" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_three, $size ); ?>); background-size: cover; background-position: center;">
 	        <?php if ( $image_three_link ) : ?>
 		        <?php $post3 = $image_three_link; ?>
 		        <?php setup_postdata( $post3 ); ?>

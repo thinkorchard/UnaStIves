@@ -1,9 +1,21 @@
 .acf-una-cta-block {
   .right .cta {
     padding-right: 5rem;
+
+    p {
+      max-width: unset;
+    }
   }
 
-  .left img {
-    clip-path: circle();
+  .left .cta {
+    p {
+      max-width: unset;
+    }
+  }
+
+  .left {
+    img {
+      clip-path: circle();
+    }
   }
 }

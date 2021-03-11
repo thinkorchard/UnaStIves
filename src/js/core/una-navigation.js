@@ -84,7 +84,7 @@ Array.prototype.forEach.call(menuItems, function(el, i){
     });
     el.querySelector('button').addEventListener("click",  function(event){
         event.preventDefault();
-        if (this.parentNode.className == "menu-item-has-children") {
+        if (this.parentNode.className === "menu-item-has-children") {
             this.parentNode.className = "menu-item-has-children open";
             this.parentNode.querySelector('a').setAttribute('aria-expanded', "true");
             this.parentNode.querySelector('button').setAttribute('aria-expanded', "true");

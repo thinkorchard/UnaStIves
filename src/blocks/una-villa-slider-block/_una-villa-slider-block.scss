@@ -26,19 +26,23 @@
       &.swiper-slide-active {
         min-width: 360px;
 
+        @media (min-width: 400px) {
+          min-width: 400px;
+        }
+
         @media (min-width: 768px) {
-          min-width: 420px;
+          min-width: 480px;
         }
 
         @media (min-width: 1024px) {
-          min-width: 460px;
-        }
-
-        @media (min-width: 1366px) {
           min-width: 560px;
         }
 
-        @media (min-width: 1400px) {
+        @media (min-width: 1366px) {
+          min-width: 88rem;
+        }
+
+        @media (min-width: 1600px) {
           min-width: 100rem;
         }
         @media (min-width: 1800px) {
@@ -49,8 +53,13 @@
 
       &.swiper-slide-prev,
       &.swiper-slide-next {
-        @media (min-width: 1400px) {
-          max-width: 30rem;
+        max-width: 10rem;
+        @media (min-width: 1024px) {
+          max-width: 20rem;
+        }
+
+        @media (min-width: 1366px) {
+          max-width: 23rem;
         }
       }
     }

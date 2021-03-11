@@ -1,0 +1,22 @@
+.acf-two-columns-background-images {
+  padding: 0;
+  .grid {
+    grid-gap: 0;
+  }
+
+  .col-1,
+  .col-2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+
+    h3 {
+      color: var(--white);
+      margin: 0;
+    }
+  }
+}

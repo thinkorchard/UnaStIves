@@ -16,9 +16,9 @@ body {
   text-transform: uppercase;
   position: absolute;
   left: 50%;
-  top: 7.5rem;
-  width: 120px;
-  transform: translate(-70px, -50%);
+  top: 9rem;
+  width: 100px;
+  transform: translate(-50px, -50%);
   z-index: var(--z-index-top);
 
   color: white;
@@ -27,12 +27,15 @@ body {
 	fill: #fff; //uses color above
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     width: 160px;
+    top: 1.5rem;
+    transform: translateX(-80px);
   }
 
   @media (min-width: 1200px) {
     width: 180px;
+    transform: translateX(-90px);
   }
 
   h1,

@@ -460,3 +460,8 @@ require_once get_parent_theme_file_path( '/inc/core/dev-helpers.php' );
 //Ignition will also search two directories deep for more underscored files within inc, blocks, and post-types folders.
 // (ie: inc/acf-extras/_acf-extras.php )
 
+function una_robots_add_follow( $robots ) {
+	$robots['follow'] = false;
+	return $robots;
+}
+add_filter( 'wp_robots', 'una_robots_add_follow' );

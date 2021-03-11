@@ -1,0 +1,28 @@
+.acf-una-menu-button {
+  margin: 1rem auto;
+  .button-menu {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 2rem;
+    font-weight: 600;
+
+    .arrow {
+      border-color: var(--black);
+      transform: rotate(45deg) scale(.75) translateY(-50%);
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 1rem;
+      top: 45%;
+    }
+
+    &:hover,
+    &:focus {
+      .arrow {
+        border-color: var(--white);
+      }
+    }
+  }
+}

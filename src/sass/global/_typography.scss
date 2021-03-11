@@ -120,6 +120,11 @@ a {
 	cursor: pointer;
 }
 
+.entry-content a:not(.button) {
+  color: var(--light-blue);
+  text-decoration: underline;
+}
+
 h1 a, h2 a{
 	color: inherit;
 }

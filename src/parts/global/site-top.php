@@ -11,6 +11,7 @@
 ?>
 
 <div class="site-top <?php echo ign_get_config( 'logo_position', 'logo-left' ); ?>">
+
 	<?php
 
 		$header_type = get_field('header_type');
@@ -19,11 +20,41 @@
 		if ( $header_type == 'image' ) :
 			if ( $page_header_image ) : ?>
     <div class="site-top-container" style="background-image:url(<?php echo $page_header_image; ?>);">
+        <div class="booking-wrapper">
+
+            <nav class="book"
+                 aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
+
+			    <?php wp_nav_menu( array(
+				    'menu_class' => 'menu-booking',
+				    'theme_location' => 'book',
+				    'menu_id'        => 'book',
+				    'container'      => '',
+				    'fallback_cb'    => 'link_to_menu_editor',
+			    ) ); ?>
+            </nav>
+        </div>
+        <!-- /.booking-wrapper -->
 	    <?php echo ign_logo(); ?>
             <?php endif; ?>
         <?php elseif ( $header_type == 'video' ) : ?>
 
             <div class="site-top-container embed-container">
+                <div class="booking-wrapper">
+
+                    <nav class="book"
+                         aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
+
+			            <?php wp_nav_menu( array(
+				            'menu_class' => 'menu-booking',
+				            'theme_location' => 'book',
+				            'menu_id'        => 'book',
+				            'container'      => '',
+				            'fallback_cb'    => 'link_to_menu_editor',
+			            ) ); ?>
+                    </nav>
+                </div>
+                <!-- /.booking-wrapper -->
 	            <?php echo ign_logo(); ?>
             <?php
 
@@ -53,6 +84,21 @@
             elseif ( $header_type == 'slider' ) : ?>
 
                 <div class="site-top-container slider-container">
+                    <div class="booking-wrapper">
+
+                        <nav class="book"
+                             aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
+
+			                <?php wp_nav_menu( array(
+				                'menu_class' => 'menu-booking',
+				                'theme_location' => 'book',
+				                'menu_id'        => 'book',
+				                'container'      => '',
+				                'fallback_cb'    => 'link_to_menu_editor',
+			                ) ); ?>
+                        </nav>
+                    </div>
+                    <!-- /.booking-wrapper -->
 	                <?php echo ign_logo(); ?>
 	            <?php $counter = 0; if ( have_rows( 'page_header_slideshow' ) ) :
                     echo '<div class="swiper-container hero-slider">';
@@ -130,21 +176,7 @@
 
         </div>
         <!-- site-navigation -->
-                        <div class="booking-wrapper">
 
-                            <nav class="book"
-                                 aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
-
-			                    <?php wp_nav_menu( array(
-				                    'menu_class' => 'menu-booking',
-				                    'theme_location' => 'book',
-				                    'menu_id'        => 'book',
-				                    'container'      => '',
-				                    'fallback_cb'    => 'link_to_menu_editor',
-			                    ) ); ?>
-                            </nav>
-                        </div>
-                        <!-- /.booking-wrapper -->
     </div>
     <!-- site-top-container -->
 </div>
