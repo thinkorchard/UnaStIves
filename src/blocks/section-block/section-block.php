@@ -25,9 +25,8 @@
         color: var(--white);
     }
 
-    <?php echo '#' . $block_id; ?> .button-una:focus,
-    <?php echo '#' . $block_id; ?> .button-una:hover {
-       color: var(--black);
+    <?php echo '#' . $block_id; ?> .button-una {
+        border-color: var(--white);
     }
     <?php endif; ?>
 </style>

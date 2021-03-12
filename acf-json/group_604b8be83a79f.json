@@ -1,9 +1,9 @@
 {
-    "key": "group_6048ae9c23cc2",
-    "title": "Block: Image Content Grid",
+    "key": "group_604b8be83a79f",
+    "title": "Block: Image CTA Grid",
     "fields": [
         {
-            "key": "field_6048aeb11960e",
+            "key": "field_604b8be84614d",
             "label": "Image One",
             "name": "image_one",
             "type": "image",
@@ -29,7 +29,29 @@
             "mime_types": ""
         },
         {
-            "key": "field_6048aeca1960f",
+            "key": "field_604b9b2d24cdb",
+            "label": "Image One Title",
+            "name": "image_one_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "",
+            "ign_set_data": ""
+        },
+        {
+            "key": "field_604b8be849bdc",
             "label": "Image Two",
             "name": "image_two",
             "type": "image",
@@ -55,7 +77,29 @@
             "mime_types": ""
         },
         {
-            "key": "field_6048aee019610",
+            "key": "field_604b9b3824cdc",
+            "label": "Image Two Title",
+            "name": "image_two_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "",
+            "ign_set_data": ""
+        },
+        {
+            "key": "field_604b8be84d67d",
             "label": "Column Background Colour",
             "name": "column_background_colour",
             "type": "color_picker",
@@ -70,6 +114,28 @@
             "admin_only": 0,
             "ign_set_data": "",
             "default_value": ""
+        },
+        {
+            "key": "field_604b8be851137",
+            "label": "Content Alignment",
+            "name": "content_alignment",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "left | right",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "left\r\nright",
+            "ign_set_data": ""
         }
     ],
     "location": [
@@ -77,7 +143,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/image-content-grid-block"
+                "value": "acf\/image-cta-grid-block"
             }
         ]
     ],
@@ -89,5 +155,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615563769
+    "modified": 1615567695
 }

@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Cards Slider Block
+--------------------------------------------------------------*/
+.acf-una-slider-block {
+  position: relative;
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+}
+
+.single {
+
+  &-slider {
+    z-index: 2;
+    width: 100%;
+    margin: 60px auto;
+
+    @media (min-width: 1024px) {
+      width: 80%;
+      max-width: 110rem;
+    }
+
+    @media (min-width: 1366px) {
+      width: 60%;
+    }
+
+    .slider__title {
+      text-align: center;
+    }
+
+    .swiper-button-prev {
+      color: var(--black);
+      left: 0;
+    }
+
+    .swiper-button-next {
+      color: var(--black);
+      right: 0;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 30px;
+    }
+
+    &__wrp {
+      align-items: center;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      transition: width .6s ease-in-out;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &__arrow {
+      background: #fff;
+      border: none;
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 26px 6px rgba(0,0,0,0.25);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      z-index: 12;
+      cursor: pointer;
+      outline: none!important;
+
+      &:focus {
+        outline: none!important;
+      }
+
+      .icon-font {
+        display: inline-flex;
+      }
+
+    }
+  }
+
+  &__item {
+    padding: 0;
+    color: var(--black);
+    display: block;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+
+}

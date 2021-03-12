@@ -1,21 +1,52 @@
 .acf-una-cta-block {
+  &.alignfull {
+    .right,
+    .left {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+
+      @media (min-width: 1300px) {
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+
+      .text-container {
+        @media (min-width: 1600px) {
+          max-width: 60%;
+        }
+      }
+    }
+
+
+  }
+
   .right .cta {
-    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     p {
       max-width: unset;
+      margin-bottom: 3rem;
     }
   }
 
   .left .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     p {
       max-width: unset;
+      margin-bottom: 3rem;
     }
   }
 
-  .left {
-    img {
-      clip-path: circle();
+  @media (min-width: 624px) and (max-width: 1000px) {
+    .right {
+      img {
+        height: 100%;
+      }
     }
   }
 }

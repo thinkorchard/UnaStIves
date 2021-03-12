@@ -82,10 +82,10 @@ input[type="checkbox"] {
 # Buttons
 --------------------------------------------------------------*/
 .btn, .button, input[type="submit"] {
-  border: 1px solid var(--black);
+  border: 1px solid var(--dark-navy);
   display: inline-block;
   text-transform: uppercase;
-  background: var(--white);
+  background: transparent;
   padding: .5rem 1.5rem;
   color: var(--black);
   border-radius: 3px;

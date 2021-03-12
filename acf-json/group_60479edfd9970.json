@@ -51,11 +51,11 @@
             "ign_set_data": ""
         },
         {
-            "key": "field_60479f461ccb1",
-            "label": "Image One Link",
-            "name": "image_one_link",
-            "type": "post_object",
-            "instructions": "",
+            "key": "field_604b40ceeb305",
+            "label": "Image One Link Type",
+            "name": "image_one_link_type",
+            "type": "select",
+            "instructions": "Choose whether your link is to a page\/post or PDF file",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -65,12 +65,74 @@
             },
             "admin_only": 0,
             "ign_set_data": "",
+            "choices": {
+                "page": "Page",
+                "document": "Document"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60479f461ccb1",
+            "label": "Image One Link",
+            "name": "image_one_link",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b40ceeb305",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_604b40f8eb306",
+            "label": "Image One Document Link",
+            "name": "image_one_document_link",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b40ceeb305",
+                        "operator": "==",
+                        "value": "document"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_60479f681ccb2",
@@ -121,11 +183,11 @@
             "ign_set_data": ""
         },
         {
-            "key": "field_60479f801ccb4",
-            "label": "Image Two Link",
-            "name": "image_two_link",
-            "type": "post_object",
-            "instructions": "",
+            "key": "field_604b4194289b1",
+            "label": "Image Two Link Type",
+            "name": "image_two_link_type",
+            "type": "select",
+            "instructions": "Choose whether your link is to a page\/post or PDF file",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -134,13 +196,74 @@
                 "id": ""
             },
             "admin_only": 0,
-            "ign_set_data": "",
+            "choices": {
+                "page": "Page",
+                "document": "Document"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60479f801ccb4",
+            "label": "Image Two Link",
+            "name": "image_two_link",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b4194289b1",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_604b4214289b3",
+            "label": "Image Two Document Link",
+            "name": "image_two_document_link",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b4194289b1",
+                        "operator": "==",
+                        "value": "document"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_60479f961ccb5",
@@ -191,11 +314,11 @@
             "ign_set_data": ""
         },
         {
-            "key": "field_60479fbf1ccb7",
-            "label": "Image Three Link",
-            "name": "image_three_link",
-            "type": "post_object",
-            "instructions": "",
+            "key": "field_604b41da289b2",
+            "label": "Image Three Link Type",
+            "name": "image_three_link_type",
+            "type": "select",
+            "instructions": "Choose whether your link is to a page\/post or PDF file",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -204,13 +327,74 @@
                 "id": ""
             },
             "admin_only": 0,
-            "ign_set_data": "",
+            "choices": {
+                "page": "Page",
+                "document": "Document"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60479fbf1ccb7",
+            "label": "Image Three Link",
+            "name": "image_three_link",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b41da289b2",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_604b4261289b4",
+            "label": "Image Three Document Link",
+            "name": "image_three_document_link",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604b41da289b2",
+                        "operator": "==",
+                        "value": "document"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_6048b79daeb46",
@@ -252,5 +436,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615378390
+    "modified": 1615545058
 }

@@ -115,7 +115,7 @@
             "key": "field_5fad62b4c55f9",
             "label": "Document Link",
             "name": "document_link",
-            "type": "page_link",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -133,14 +133,11 @@
                 "id": ""
             },
             "admin_only": 0,
-            "ign_set_data": "",
-            "post_type": [
-                "attachment"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "allow_archives": 0,
-            "multiple": 0
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_5fad62dac55fa",
@@ -217,6 +214,28 @@
             "maxlength": "",
             "autocomplete": "",
             "ign_set_data": ""
+        },
+        {
+            "key": "field_604b58bfe7e5c",
+            "label": "Button Alignment",
+            "name": "button_alignment",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "left | right | center",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "left\r\nright\r\ncenter",
+            "ign_set_data": ""
         }
     ],
     "location": [
@@ -236,5 +255,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614964615
+    "modified": 1615550703
 }

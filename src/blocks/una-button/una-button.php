@@ -16,8 +16,21 @@
 	$document_link = get_field( 'document_link' );
 	$archive_link = get_field( 'archive_link' );
 	$other_link = get_field( 'other_link' );
+	$btn_align = get_field( 'button_alignment' );
 
 ?>
+
+<style>
+    <?php if ($btn_align == 'right') : ?>
+    <?php echo '#' . $block_id; ?>.acf-una-button {
+        text-align: right;
+    }
+    <?php elseif ( $btn_align == 'center' ) : ?>
+    <?php echo '#' . $block_id; ?>.acf-una-button {
+        text-align: center;
+    }
+    <?php endif; ?>
+</style>
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<?php if ( $page_link ) : ?>

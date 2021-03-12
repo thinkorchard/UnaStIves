@@ -42,3 +42,11 @@ var villaSwiper = new Swiper('.villa-slider', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+var singleSwiper = new Swiper('.single-slider', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
