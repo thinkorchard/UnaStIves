@@ -17,7 +17,7 @@
  *
  */
 
-get_header();
+get_header( 'blog' );
 
 
 ?>
@@ -25,22 +25,8 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-            <header class="entry-header layout-center-content">
-                <div class="container text-center">
-                    <h1 class="entry-title">
-						<?php if ( is_front_page() ) {
-							echo get_bloginfo( 'name' );
-						}
-
-						if( is_post_type_archive()){
-						    echo post_type_archive_title();
-                        } ?>
-                    </h1>
-                </div>
-            </header>
-
-            <div class="container">
-                <section class="archive-cards card-grid">
+            <div class="container card-listing alignwide">
+                <section class="card-holder card-grid">
 					<?php
 					if ( have_posts() ):
 						while ( have_posts() ) : the_post();

@@ -2,7 +2,7 @@
 	<div class="header-image cover-image">
 		<?php
 		if ( has_post_thumbnail() ) {
-			the_post_thumbnail();
+			the_post_thumbnail( 'medium' );
 		}
 		?>
 	</div>
@@ -14,6 +14,7 @@
 					<?php echo the_title(); ?>
 				</a>
 			</h2>
+
 		</div>
 	</header>
 
@@ -21,9 +22,8 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .card-content -->
 
-	<div class="card-meta">
+    <div class="card-meta">
 		<?php ign_posted_on(); ?>
-		<?php echo ign_comment_link(); ?>
-	</div>
+    </div>
 
 </article><!-- #post-## -->

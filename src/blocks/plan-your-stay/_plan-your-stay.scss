@@ -1,0 +1,27 @@
+.acf-plan-your-stay {
+
+  .span-4,
+  .span-6 {
+    min-height: 20rem;
+    position: relative;
+
+    h4 {
+      letter-spacing: 4px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+    }
+  }
+
+  .span-6 {
+    min-height: 30rem;
+  }
+}

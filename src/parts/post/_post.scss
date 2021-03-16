@@ -1,7 +1,36 @@
 /*--------------------------------------------------------------
 # Post Card design
 --------------------------------------------------------------*/
-.post.card-item{
-  border: 1px solid var(--highlight);
-  padding: var(--gutters);
+.post.card-item,
+.type-post.card-item {
+  background-color: var(--white);
+
+  h2.card-title {
+    font-size: 1.8rem;
+    letter-spacing: unset;
+    margin: 1rem;
+  }
+
+  .card-meta {
+    margin: .5rem 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.blog .type-post.card-item {
+  .card-content {
+    padding: 0 1rem;
+  }
+}
+
+.blog .site-main {
+  background-color: var(--mauve);
+}
+
+.acf-section-block.alignfull .post.card-item p,
+.acf-section-block.alignfull .type-post.card-item p{
+  max-width: calc(100% - 2rem);
 }

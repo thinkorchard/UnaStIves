@@ -6,7 +6,7 @@
 	padding: var(--gap) 0;
 
 	.page-numbers {
-		background: var(--highlight);
+		background: var(--light-blue);
 		color: white;
 		margin: 0 3px;
 		padding: 3px 8px;
@@ -17,7 +17,8 @@
 	}
 
 	.page-numbers.current {
-		background: grey;
+		background: var(--white);
+      color: var(--black);
 	}
 
 	.page-numbers.dots {

@@ -467,6 +467,14 @@ $media-list: map-sort-by-values($media-list, true); //reorder largest first so s
   }
 }
 
+.card-grid {
+  margin-bottom: 3rem;
+}
 
+.alm-btn-wrap {
+  text-align: center;
 
-
+  .button-una:disabled {
+    opacity: .2;
+  }
+}

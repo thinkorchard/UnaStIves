@@ -10,6 +10,7 @@
 	 */
 	$block_id    = ign_get_block_anchor( $block );
 	$section_bg = get_field( 'background_colour' );
+	$section_bg_img = get_field( 'background_image' );
 
 ?>
 <style type="text/css">
@@ -20,13 +21,30 @@
 
     }
     <?php if ( $section_bg ) :
-    echo '#' . $block_id; ?> .button-una:link,
-    <?php echo '#' . $block_id; ?> .button-una:visited {
+    echo '#' . $block_id . ' .button-una'; ?> {
         color: var(--white);
     }
 
-    <?php echo '#' . $block_id; ?> .button-una {
+    <?php echo '#' . $block_id . ' .button-una'; ?>:hover,
+    <?php echo '#' . $block_id . ' .button-una:active'; ?>,
+    <?php echo '#' . $block_id . ' .button-una:focus'; ?> {
+         color: var(--black) !important;
+    }
+
+    <?php echo '#' . $block_id . ' .button-una'; ?>  {
         border-color: var(--white);
+    }
+    <?php endif; ?>
+    <?php if ( $section_bg_img ) : echo '#' . $block_id; ?> {
+        background-image: url(<?php echo $section_bg_img; ?>);
+        background-repeat:  no-repeat;
+        background-size:  cover;
+        background-position: center;
+    }
+    <?php endif; ?>
+
+    <?php if ( $section_bg == '#60a5ff' ) : echo '#' . $block_id . ' a:not(.button)'; ?> {
+        color: var(--white);
     }
     <?php endif; ?>
 </style>
