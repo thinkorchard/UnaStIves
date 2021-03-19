@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Post Card design
+--------------------------------------------------------------*/
+.una_events.card-item,
+.type-una_events.card-item {
+  background-color: var(--peach);
+
+  h2.h4 {
+    font-size: 1.8rem;
+    letter-spacing: normal;
+    margin-bottom: 1rem;
+  }
+
+  .card-meta {
+    margin: .5rem 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.blog .type-una_events.card-item {
+  .card-content {
+    padding: 0 1rem;
+  }
+}
+
+.acf-section-block.alignfull .una_events.card-item p,
+.acf-section-block.alignfull .type-una_events.card-item p{
+  max-width: calc(100% - 2rem);
+}
+
+.una_events {
+
+  .event-meta {
+    margin-top: 3rem;
+  }
+  .h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.event-item {
+  .cover-image {
+    position: relative;
+
+    .event-date {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      padding: .75rem 1rem;
+      color: var(--dark-navy);
+      background-color: var(--white);
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  .card-header {
+    .event-meta {
+      margin-top: 0;
+    }
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  
+}

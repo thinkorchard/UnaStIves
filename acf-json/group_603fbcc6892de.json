@@ -200,6 +200,20 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "una_events"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "offers"
+            }
         ]
     ],
     "menu_order": 0,
@@ -210,5 +224,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615220014
+    "modified": 1616084441
 }

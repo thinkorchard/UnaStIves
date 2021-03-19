@@ -1,10 +1,10 @@
 {
-    "key": "group_5d80e2fef10d2",
-    "title": "Cards Block",
+    "key": "group_6053878979378",
+    "title": "Block: Event Card",
     "fields": [
         {
-            "key": "field_5d80e2ff04ef3",
-            "label": "Cards",
+            "key": "field_60538d8ba1bbd",
+            "label": "Event Cards",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -16,11 +16,12 @@
                 "id": ""
             },
             "admin_only": 0,
+            "ign_set_data": "",
             "placement": "top",
             "endpoint": 0
         },
         {
-            "key": "field_5d80e3d58a431",
+            "key": "field_60539065a1bc1",
             "label": "Post Types",
             "name": "post_types",
             "type": "select",
@@ -33,24 +34,23 @@
                 "id": ""
             },
             "admin_only": 0,
+            "ign_set_data": "",
             "choices": {
                 "post": "Posts",
                 "page": "Pages",
                 "una_events": "Events",
                 "offers": "Offers"
             },
-            "default_value": [
-                "post"
-            ],
+            "default_value": "una_events",
             "allow_null": 0,
-            "multiple": 1,
+            "multiple": 0,
             "ui": 0,
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
         },
         {
-            "key": "field_5d80e5098a432",
+            "key": "field_6053912ddf953",
             "label": "Number of Cards",
             "name": "posts_per_page",
             "type": "number",
@@ -63,6 +63,7 @@
                 "id": ""
             },
             "admin_only": 0,
+            "ign_set_data": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -72,7 +73,7 @@
             "step": ""
         },
         {
-            "key": "field_5d80e2ff0577e",
+            "key": "field_60538d9da1bbe",
             "label": "Advanced",
             "name": "",
             "type": "tab",
@@ -90,32 +91,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5d80e2ff036cf",
-            "label": "Cards Container",
+            "key": "field_60538cd8a1bbc",
+            "label": "Event Cards Container",
             "name": "container_class",
             "type": "text",
-            "instructions": "Class for container that holds all the cards.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "show-alignfull",
-                "id": ""
-            },
-            "admin_only": 0,
-            "default_value": "",
-            "placeholder": "container | container-content | container-fluid",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "autocomplete": "container\r\ncontainer-fluid\r\ncontainer-content",
-            "ign_set_data": ""
-        },
-        {
-            "key": "field_5d80e2ff03e58",
-            "label": "Background Image",
-            "name": "background_image",
-            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -125,19 +104,16 @@
                 "id": ""
             },
             "admin_only": 0,
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "placeholder": "container | container-content | container-fluid",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "container\r\ncontainer-content\r\ncontainer-fluid",
+            "ign_set_data": ""
         },
         {
-            "key": "field_5d80e2ff045b0",
+            "key": "field_60538ddea1bbf",
             "label": "Grid Class",
             "name": "grid_class",
             "type": "text",
@@ -156,12 +132,12 @@
             "append": "",
             "maxlength": "",
             "autocomplete": "grid\r\ncard-grid\r\ngrid span-all-4",
-            "ign_set_data": ".grid-class"
+            "ign_set_data": ""
         },
         {
-            "key": "field_5ee7cc7d226a2",
+            "key": "field_60538e1ca1bc0",
             "label": "Skip This Post",
-            "name": "skip_this_id",
+            "name": "skip_this_post",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -185,7 +161,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/post-cards"
+                "value": "acf\/event-post-cards"
             }
         ]
     ],
@@ -197,5 +173,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616148897
+    "modified": 1616153414
 }
