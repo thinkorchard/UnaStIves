@@ -11,6 +11,11 @@
 	$block_id    = ign_get_block_anchor( $block );
 	$section_bg = get_field( 'background_colour' );
 	$section_bg_img = get_field( 'background_image' );
+	$container      = get_field( 'container_class' );
+
+	if ( ! $container ) {
+		$container = 'container';
+	}
 
 ?>
 <style type="text/css">
@@ -51,5 +56,7 @@
 </style>
 
 <section <?php ign_block_attrs( $block ); ?>>
-	<InnerBlocks />
+    <div class="<?php echo esc_attr( $container ); ?>">
+        <InnerBlocks />
+    </div>
 </section>

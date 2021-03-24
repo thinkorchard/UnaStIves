@@ -10,10 +10,6 @@
 	 */
 	$block_id    = ign_get_block_anchor( $block );
 
-	if ( ! $container ) {
-		$container = 'container';
-	}
-
 	$template = array(
 
 		array( 'core/heading', array(
@@ -27,10 +23,10 @@
 	);
 
 ?>
-<section <?php ign_block_attrs( $block ); ?>>
-	<div class="title-para <?php echo esc_attr( $container ); ?>">
+<div <?php ign_block_attrs( $block ); ?>>
+	<div class="title-para container">
 
 		<?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
 
 	</div>
-</section>
+</div>

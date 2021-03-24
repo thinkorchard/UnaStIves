@@ -4,8 +4,12 @@
 .acf-una-villa-slider-block {
   position: relative;
 
-  .swiper-wrapper {
-    align-items: center;
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: .5rem;
+
+    .swiper-pagination-bullet {
+      background: var(--light-blue);
+    }
   }
 }
 
@@ -14,52 +18,47 @@
   &-slider {
     z-index: 2;
     width: 100%;
-    margin: 60px auto;
+    height: 100%;
+    margin: 5rem auto;
+    padding-bottom: 5rem !important;
 
     &__wrp {
+      height: 80vh;
       align-items: center;
+      justify-content: center;
     }
 
     &__item {
       flex-shrink: 0;
-      transition: width .6s ease-in-out;
-      &.swiper-slide-active {
-        min-width: 360px;
+      position: relative;
+      max-width: 100%;
 
-        @media (min-width: 400px) {
-          min-width: 400px;
-        }
-
-        @media (min-width: 768px) {
-          min-width: 480px;
-        }
-
-        @media (min-width: 1024px) {
-          min-width: 560px;
-        }
-
-        @media (min-width: 1366px) {
-          min-width: 88rem;
-        }
-
-        @media (min-width: 1600px) {
-          min-width: 100rem;
-        }
-        @media (min-width: 1800px) {
-          min-width: 120rem;
-        }
-
+      @media (min-width: 768px) {
+        max-width: 40rem;
       }
 
-      &.swiper-slide-prev,
-      &.swiper-slide-next {
-        max-width: 10rem;
-        @media (min-width: 1024px) {
-          max-width: 20rem;
-        }
+      @media (min-width: 1024px) {
+        max-width: 60rem;
+      }
 
-        @media (min-width: 1366px) {
-          max-width: 23rem;
+      @media (min-width: 1366px) {
+        max-width: 80rem;
+      }
+
+      @media (min-width: 1400px) {
+        max-width: 114rem;
+      }
+
+      .entity-img {
+        transform: scale(0.85);
+        transition: transform 0.7s;
+      }
+
+      &.swiper-slide-active {
+
+        .entity-img {
+          transform: scale(1.05);
+          transition: transform 0.7s;
         }
       }
     }
@@ -88,34 +87,8 @@
         display: inline-flex;
       }
 
-      &.news-slider-prev {
-        left: 15px;
-        transform: translateY(-50%);
-      }
 
-      &.news-slider-next {
-        right: 15px;
-        transform: translateY(-50%);
-      }
     }
   }
 
-  &__item {
-    padding: 0;
-    color: var(--black);
-    display: block;
-  }
-
-
-}
-
-
-.editor-styles-wrapper .acf-block-preview {
-  .news-slider__item.swiper-slide {
-    opacity: 1;
-  }
-
-  .news__img {
-    overflow: hidden;
-  }
 }

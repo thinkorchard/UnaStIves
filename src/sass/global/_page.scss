@@ -249,3 +249,12 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.social {
+  display: flex;
+  justify-items: flex-start;
+
+  li {
+    margin-right: 1.5rem;
+  }
+}

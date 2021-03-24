@@ -4,19 +4,10 @@
 }
 
 .sticky-menu {
-  visibility: hidden;
-  opacity: 0;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: all .5s;
-
-  @media (min-width: 768px) {
-    left: 2rem;
-  }
+  z-index: var(--z-index-top);
 
   .menu {
     list-style: none;
@@ -30,12 +21,15 @@
       display: block;
       transition: all .4s ease-in;
       text-decoration: none;
+
+
     }
 
-    .active a {
+    .is-active a {
       color: var(--white);
-      transform: translateX(5px);
     }
+
+
   }
 
   &.sticky {
@@ -46,4 +40,6 @@
   }
 }
 
-
+.editor-styles-wrapper .acf-block-preview .sticky-menu {
+  position: unset !important;
+}

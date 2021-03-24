@@ -120,11 +120,9 @@
 		            foreach ($srcset as $set) :
 
 			            // skip big ones
-			            if ($set['width'] > 2200) continue;
+			            if ($set['width'] > 1900) continue;
 
-			            $css .= '
-			            .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');
-	@media only screen and (min-width: ' . $set['width'] . 'px) {
+			            $css .= '@media only screen and (min-width: ' . $set['width'] . 'px) {
         .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');  } 
     }';
 
@@ -142,6 +140,21 @@
 		        endif;
         else: ?>
                     <div class="site-top-container">
+                        <div class="booking-wrapper">
+
+                            <nav class="book"
+                                 aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
+
+			                    <?php wp_nav_menu( array(
+				                    'menu_class' => 'menu-booking',
+				                    'theme_location' => 'book',
+				                    'menu_id'        => 'book',
+				                    'container'      => '',
+				                    'fallback_cb'    => 'link_to_menu_editor',
+			                    ) ); ?>
+                            </nav>
+                        </div>
+                        <!-- /.booking-wrapper -->
 	                    <?php echo ign_logo(); ?>
 		<?php endif;
 	?>

@@ -62,3 +62,33 @@ if ( ! $container ) {
         <!-- /.horizontal-menu -->
     </div>
 </section>
+<script>
+   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+   const sticky = document.querySelector('.sticky-menu');
+   const section1 = document.querySelector('.hentry');
+   const revealMenu = gsap.fromTo(sticky, {autoAlpha: 0, left: 0, top: 50}, {duration: 1, autoAlpha: 1});
+   ScrollTrigger.create({
+       trigger: section1,
+       animation: revealMenu,
+       scrub: true,
+       start: "-=200",
+       end: "+=200",
+   })
+
+   const navLinks = gsap.utils.toArray(".sticky-menu li");
+   const sections = gsap.utils.toArray(".acf-section-block");
+
+   navLinks.forEach(function(a) {
+       a.addEventListener("click", function(e) {
+           e.preventDefault();
+           gsap.to(window, {
+               duration: 1.5,
+               scrollTo: e.target.getAttribute("href"),
+           });
+
+       });
+   });
+
+
+</script>

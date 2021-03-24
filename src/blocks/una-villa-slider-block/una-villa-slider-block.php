@@ -39,6 +39,8 @@
 		        endwhile;
 		    endif; ?>
 		</div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
 		<!-- /.una-villa-slider-wrapper -->
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>

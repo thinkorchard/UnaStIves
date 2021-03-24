@@ -1,20 +1,16 @@
 .acf-section-block {
+
   &.alignfull {
     p {
-      max-width: 90%;
       margin: 1.5rem auto;
-
-      @media (min-width: 1366px) {
-        max-width: 70%;
-      }
-
-      @media (min-width: 1600px) {
-        max-width: 60%;
-      }
     }
 
     h2 + p {
       font-size: 1.8rem;
     }
+  }
+
+  .container-fluid {
+    padding: 0;
   }
 }

@@ -264,10 +264,18 @@ function una_scripts() {
 	wp_register_script( 'jquery-migrate', "https://code.jquery.com/jquery-migrate-3.3.0.min.js", array( 'jquery-core' ), '3.3.0' );
 	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/swiper.min.js', array(), true );
 
+	// GSAP Library and plugins
+	wp_register_script( 'gsap-core', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js", array(), '3.6.0' );
+	wp_register_script( 'gsap-scroll-to', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js", array(), '3.6.0' );
+	wp_register_script( 'gsap-scroll-trigger', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js", array(), '3.6.0' );
+
 	//any javascript file in assets/js that ends with custom.js will be lumped into this file.
 	wp_enqueue_script( 'una-custom-js', get_template_directory_uri() . '/dist/frontEnd_bundle.js', array(
 		'jquery',
-		'polyfill'
+		'polyfill',
+		'gsap-core',
+		'gsap-scroll-to',
+		'gsap-scroll-trigger'
 	),
 		wp_get_theme()->get( 'Version' ), true );
 
@@ -280,6 +288,9 @@ function una_scripts() {
 	) );
 
 	wp_enqueue_script( 'swiper' );
+
+	wp_register_script( 'FontAwesome', 'https://kit.fontawesome.com/005eb7f7d4.js', null, null, true );
+	wp_enqueue_script('FontAwesome');
 
 
 	//Icons: add icons for use in custom js here

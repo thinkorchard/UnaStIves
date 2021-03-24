@@ -44,6 +44,28 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_6058a3ea74a4c",
+            "label": "Container Class",
+            "name": "container_class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "container | container-content | container-fluid",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "container\r\ncontainer-fluid\r\ncontainer-content",
+            "ign_set_data": ""
         }
     ],
     "location": [
@@ -63,5 +85,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615803510
+    "modified": 1616421946
 }

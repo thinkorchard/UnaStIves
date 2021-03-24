@@ -1,9 +1,24 @@
+@use "../../sass/resources" as *;
+
 /*--------------------------------------------------------------
 # Post Card design
 --------------------------------------------------------------*/
+.acf-event-cards {
+  .card-listing {
+    padding: 0;
+
+    @media(min-width: 576px) {
+      padding: 0 var(--container-padding);
+    }
+  }
+  .event-grid {
+    --card-min: 350px;
+  }
+}
+
 .una_events.card-item,
 .type-una_events.card-item {
-  background-color: var(--peach);
+  background-color: var(--white);
 
   h2.h4 {
     font-size: 1.8rem;
@@ -36,17 +51,28 @@
   .event-meta {
     margin-top: 3rem;
   }
-  .h4 {
+  .h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
+    margin-top: 1em;
     margin-bottom: 1rem;
+     a {
+       color: var(--black);
+     }
+  }
+
+  .fas {
+    color: #999;
   }
 }
 
 .event-item {
   .cover-image {
     position: relative;
+    img {
+      max-height: 30rem;
+    }
 
     .event-date {
       position: absolute;
@@ -72,5 +98,4 @@
       text-decoration: none;
     }
   }
-  
 }

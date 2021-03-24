@@ -146,6 +146,10 @@ $media-list: ('container': 1200px, 'medium': 768px, 'small': 576px, 'large': 103
   @include flex-card-grid(); //almost the same except cards on lowest row will not be same size if there isnt an even amount
 }
 
+.event-grid {
+  @include card-grid();
+}
+
 
 /*--------------------------------------------------------------
 # 12 Column CSS Grids
