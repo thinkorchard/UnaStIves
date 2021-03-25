@@ -1,0 +1,108 @@
+@use "../../sass/resources" as *;
+
+/*--------------------------------------------------------------
+# Post Card design
+--------------------------------------------------------------*/
+.acf-offer-cards {
+  .card-listing {
+    padding: 0;
+
+    @media(min-width: 576px) {
+      padding: 0 var(--container-padding);
+    }
+  }
+  .offer-grid {
+    --card-min: 350px;
+  }
+}
+
+.offers.card-item,
+.type-offers.card-item {
+  background-color: var(--white);
+
+  h2.h4 {
+    font-size: 1.8rem;
+    letter-spacing: normal;
+    margin-bottom: 1rem;
+  }
+
+  .card-meta {
+    margin: .5rem 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.acf-section-block.alignfull .offers.card-item p,
+.acf-section-block.alignfull .type-offers.card-item p{
+  max-width: calc(100% - 2rem);
+}
+
+.offers {
+
+  .event-meta {
+    margin-top: 3rem;
+  }
+  .h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+     a {
+       color: var(--dark-navy);
+     }
+  }
+
+  .fas {
+    color: #999;
+  }
+}
+
+.offer-item {
+  .cover-image {
+    position: relative;
+    img {
+      max-height: 30rem;
+    }
+
+    .offer-date {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      padding: .75rem 1rem;
+      color: var(--dark-navy);
+      background-color: var(--white);
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  .card-header {
+    .offer-meta {
+      margin-top: 0;
+    }
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.book-now {
+  text-align: center;
+
+  .button {
+    font-size: 2rem;
+  }
+}

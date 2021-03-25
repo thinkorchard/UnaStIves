@@ -1,0 +1,176 @@
+{
+    "key": "group_605c97681a103",
+    "title": "Block: Offer Card",
+    "fields": [
+        {
+            "key": "field_605c976829281",
+            "label": "Offer Cards",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_605c97682cd82",
+            "label": "Post Types",
+            "name": "post_types",
+            "type": "select",
+            "instructions": "The default listing will only work on a page set as an archive. This can be done in the customizer.\r\nOtherwise you will need to create a custom card list.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "ign_set_data": "",
+            "choices": {
+                "post": "Posts",
+                "page": "Pages",
+                "una_events": "Events",
+                "offers": "Offers"
+            },
+            "default_value": "una_events",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_605c9768307c6",
+            "label": "Number of Cards",
+            "name": "posts_per_page",
+            "type": "number",
+            "instructions": "How many cards to show?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "ign_set_data": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_605c976834280",
+            "label": "Advanced",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "ign_set_data": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_605c976837d23",
+            "label": "Offers Cards Container",
+            "name": "container_class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "container | container-content | container-fluid",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "container\r\ncontainer-content\r\ncontainer-fluid",
+            "ign_set_data": ""
+        },
+        {
+            "key": "field_605c97683b778",
+            "label": "Grid Class",
+            "name": "grid_class",
+            "type": "text",
+            "instructions": "Type of grid you would like. Some options include \"card-grid\" for equal sized columns, or \"grid\" for specific column sizes. \r\nIf using \"grid\" make sure to add span classes onto your paragraphs.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "card-grid",
+            "placeholder": "grid | card-grid",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "grid\r\ncard-grid\r\ngrid span-all-4",
+            "ign_set_data": ""
+        },
+        {
+            "key": "field_605c97683f236",
+            "label": "Skip This Post",
+            "name": "skip_this_post",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "ign_set_data": "",
+            "message": "Skip This Page when getting cards",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/offer-post-cards"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1616680858
+}

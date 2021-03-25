@@ -150,6 +150,10 @@ $media-list: ('container': 1200px, 'medium': 768px, 'small': 576px, 'large': 103
   @include card-grid();
 }
 
+.offer-grid {
+  @include card-grid();
+}
+
 
 /*--------------------------------------------------------------
 # 12 Column CSS Grids

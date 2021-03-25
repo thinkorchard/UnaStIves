@@ -79,7 +79,7 @@ function runScrollerAttributes(element) {
 			}).on('enter leave', function () {
 				//instead of using toggle class we can use these events of on enter and leave and toggle class at both times
 				element.classList.toggle(animationClass);
-				element.classList.toggle('active');
+				element.classList.toggle('is-active');
 
 				//if fixed at top set height for spacer and width
 				if(element.getAttribute('data-scrollanimation') === 'fixed-at-top'){

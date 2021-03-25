@@ -122,7 +122,8 @@
 			            // skip big ones
 			            if ($set['width'] > 1900) continue;
 
-			            $css .= '@media only screen and (min-width: ' . $set['width'] . 'px) {
+			            $css .= '.swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');  } 
+			            @media only screen and (min-width: ' . $set['width'] . 'px) {
         .swiper-slide-' . $counter . '{ background-image: url(' . $set['src'] . ');  } 
     }';
 

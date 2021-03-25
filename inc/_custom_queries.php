@@ -38,6 +38,12 @@ function set_posts_per_page_for_post_types( $query ) {
 			$query->set('meta_key', 'event_start_date');
 			$query->set('order', 'ASC');
 
+		} elseif( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'offers' ) {
+
+			$query->set('orderby', 'meta_value');
+			$query->set('meta_key', 'offer_start_date');
+			$query->set('order', 'ASC');
+
 		}
 
 

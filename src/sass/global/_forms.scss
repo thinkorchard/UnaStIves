@@ -87,7 +87,7 @@ input[type="checkbox"] {
   text-transform: uppercase;
   background: transparent;
   padding: .5rem 1.5rem;
-  color: var(--black);
+  color: var(--dark-navy);
   border-radius: 3px;
   transition: all .5s;
   cursor: pointer;
@@ -115,6 +115,18 @@ input[type="checkbox"] {
   &:hover, &:focus {
     background: var(--highlight);
     color: white;
+  }
+}
+
+.button {
+  &--dark {
+    background: var(--dark-navy);
+    color: var(--white);
+  }
+
+  &--white {
+    background: var(--white);
+    color: var(--dark-navy);
   }
 }
 

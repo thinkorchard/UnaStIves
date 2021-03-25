@@ -67,7 +67,8 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(0%);
     margin: 0;
-
+    min-width: 30rem;
+    text-align: center;
     font-size: 3rem;
 
     @media (min-width: 768px) {
@@ -226,6 +227,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-color: var(--dark-navy);
 
   /* Center slide text vertically */
 
@@ -237,11 +239,15 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     color: #fff;
     margin: 0;
+
+    @media (min-width: 576px) {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -256,5 +262,81 @@ body {
 
   li {
     margin-right: 1.5rem;
+  }
+}
+
+.arrange {
+  .wpforms-container {
+
+    .wpforms-field-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      > div:not(.wpforms-one-half) {
+        justify-self: normal;
+        width: 100%;
+      }
+    }
+
+    .wpforms-field {
+      margin-bottom: 1.5rem;
+    }
+
+    .wpforms-one-half {
+      width: 48%;
+    }
+
+    .wpforms-field-label,
+    .wpforms-field-sublabel {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .wpforms-field-sublabel {
+      font-size: 0.9em;
+    }
+
+    input[class^="wpforms-field"] {
+      border-color: var(--white);
+      padding: 1.5rem 1rem;
+      color: var(--white);
+    }
+
+    select[class^="wpforms-field"] {
+      border-color: var(--white);
+      padding: 1.5rem 1rem;
+      color: var(--white);
+
+      option {
+        color: var(--dark-navy);
+      }
+    }
+
+    .wpforms-field-label-inline {
+      display: inline;
+      color: var(--white);
+    }
+
+    .wpforms-field-gdpr-checkbox {
+
+      ul {
+        margin-left: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .button {
+      font-size: 2rem;
+      padding: 1.5rem;
+    }
+
+    .wpforms-confirmation-container {
+      color: var(--white);
+      text-align: center;
+    }
   }
 }
