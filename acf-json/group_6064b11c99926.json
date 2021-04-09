@@ -1,9 +1,9 @@
 {
-    "key": "group_6053878979378",
-    "title": "Block: Event Card",
+    "key": "group_6064b11c99926",
+    "title": "Block: Events Slider",
     "fields": [
         {
-            "key": "field_60538d8ba1bbd",
+            "key": "field_6064b11ca54ad",
             "label": "Event Cards",
             "name": "",
             "type": "tab",
@@ -21,7 +21,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_60539065a1bc1",
+            "key": "field_6064b11ca8f49",
             "label": "Post Types",
             "name": "post_types",
             "type": "select",
@@ -50,30 +50,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_6053912ddf953",
-            "label": "Number of Cards",
-            "name": "posts_per_page",
-            "type": "number",
-            "instructions": "How many cards to show?",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "admin_only": 0,
-            "ign_set_data": "",
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
-        },
-        {
-            "key": "field_60538d9da1bbe",
+            "key": "field_6064b11cb053b",
             "label": "Advanced",
             "name": "",
             "type": "tab",
@@ -91,7 +68,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_60538cd8a1bbc",
+            "key": "field_6064b11cb3ef5",
             "label": "Event Cards Container",
             "name": "container_class",
             "type": "text",
@@ -113,29 +90,7 @@
             "ign_set_data": ""
         },
         {
-            "key": "field_60538ddea1bbf",
-            "label": "Grid Class",
-            "name": "grid_class",
-            "type": "text",
-            "instructions": "Type of grid you would like. Some options include \"card-grid\" for equal sized columns, or \"grid\" for specific column sizes. \r\nIf using \"grid\" make sure to add span classes onto your paragraphs.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "admin_only": 0,
-            "default_value": "event-grid",
-            "placeholder": "event-grid",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "autocomplete": "event-grid",
-            "ign_set_data": ""
-        },
-        {
-            "key": "field_60538e1ca1bc0",
+            "key": "field_6064b11cbb407",
             "label": "Skip This Post",
             "name": "skip_this_post",
             "type": "true_false",
@@ -161,7 +116,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/event-post-slider"
+                "value": "acf\/events-slider"
             }
         ]
     ],
@@ -173,5 +128,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1617268642
+    "modified": 1617211781
 }

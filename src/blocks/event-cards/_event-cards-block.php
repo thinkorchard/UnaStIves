@@ -1,9 +1,9 @@
 <?php
 
-	function ign_una_event_card_register_block() {
+	function una_events_slider_register_block() {
 // Section Menu Block
 		acf_register_block_type( array(
-			'name'            => 'event-post-cards',
+			'name'            => 'event-post-slider',
 			'title'           => __( 'Event Cards' ),
 			'description'     => __( 'shows a listing of items for the events post type or an archive page' ),
 			'render_template' => 'src/blocks/event-cards/event-cards-block.php',
@@ -20,7 +20,7 @@
 
 // Check if function exists and hook into setup and adds all blocks.
 	if ( function_exists( 'acf_register_block_type' ) ) {
-		add_action( 'acf/init', 'ign_una_event_card_register_block' );
+		add_action( 'acf/init', 'una_events_slider_register_block' );
 	}
 
 

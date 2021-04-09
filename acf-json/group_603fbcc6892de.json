@@ -69,7 +69,7 @@
                 "id": ""
             },
             "admin_only": 0,
-            "return_format": "url",
+            "return_format": "id",
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
@@ -224,5 +224,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616084441
+    "modified": 1617017064
 }

@@ -292,6 +292,8 @@ function una_scripts() {
 	wp_register_script( 'FontAwesome', 'https://kit.fontawesome.com/005eb7f7d4.js', null, null, true );
 	wp_enqueue_script('FontAwesome');
 
+	wp_register_script( 'CampaignMonitor', 'https://js.createsend1.com/javascript/copypastesubscribeformlogic.js', null, null ,true );
+	wp_enqueue_script( 'CampaignMonitor' );
 
 	//Icons: add icons for use in custom js here
 	wp_localize_script( 'una-custom-js', 'icons', array(

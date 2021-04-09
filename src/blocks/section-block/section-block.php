@@ -55,8 +55,8 @@
     <?php endif; ?>
 </style>
 
-<section <?php ign_block_attrs( $block ); ?>>
+<div <?php ign_block_attrs( $block ); ?>>
     <div class="<?php echo esc_attr( $container ); ?>">
         <InnerBlocks />
     </div>
-</section>
+</div>

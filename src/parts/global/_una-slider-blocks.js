@@ -50,3 +50,24 @@ var singleSwiper = new Swiper('.single-slider', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+var eventsSwiper = new Swiper('.events-slider', {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 2,
+
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

@@ -29,13 +29,18 @@
       text-align: center;
     }
 
+    .swiper-button-next,
     .swiper-button-prev {
-      color: var(--black);
+      transform: translateY(125%);
+    }
+
+    .swiper-button-prev {
+      color: var(--white);
       left: 0;
     }
 
     .swiper-button-next {
-      color: var(--black);
+      color: var(--white);
       right: 0;
     }
 

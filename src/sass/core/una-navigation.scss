@@ -1,25 +1,63 @@
-.site-navigation {
+.site-navigation-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  z-index: var(--z-index-top);
+  transition: background-color 0.6s;
+
+  .site-logo {
+    color: white;
+    width: 10rem;
+    margin-top: 1.25rem;
+
+    @media (min-width: 540px) {
+      transform: translateX(50%);
+
+    }
+
+    @media (min-width: 1367px) {
+      transition: 0.6s;
+      transform: translateX(50%);
+      width: 18rem;
+    }
+
+    svg, path, g {
+      fill: #fff; //uses color above
+    }
+
+    h1,
+    p {
+      margin: 0;
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    background: var(--dark-navy);
+    height: 10rem;
+
+    .site-logo {
+      width: 10rem;
+
+      @media (min-width: 1367px) {
+        width: 14rem !important;
+        transition: 0.6s;
+        transform: translateX(50%);
+      }
+    }
+  }
 }
 
+
+
 .dropdown-wrapper {
-  position: relative;
-  height: 40px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 5rem;
-  margin-top: 2.5rem;
-  margin-left: 1.5rem;
-
-  @media (min-width: 768px) {
-    margin-top: 2.5rem;
-    margin-left: 2.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    margin-top: 4rem;
-    margin-left: 4rem;
-  }
 }
 
 .site-title {
@@ -30,8 +68,6 @@
 .dropdown-trigger {
   display: inline-block;
   position: relative;
-  padding: 0 36px 0 20px;
-  line-height: 40px;
   background-color: transparent;
   color: #fff;
   border: none;
@@ -336,26 +372,6 @@
   padding: 1rem 2rem;
 }
 
-.booking-wrapper {
-  width: 100%;
-
-  z-index: var(--z-index-top);
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    transform: translateX(0);
-    width: 15rem;
-    bottom: unset;
-    z-index: 101;
-  }
-
-  @media (min-width: 1024px) {
-    top: 5rem;
-    right: 5rem;
-  }
-
-}
 
 .book > ul {
   margin: 0;
@@ -372,29 +388,40 @@
   transition: background-color .3s;
 
   a {
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.4rem;
+    background-color: var(--dark-navy);
+    color: var(--white);
+  }
+
+  &.open {
+    > a,
+    > a:hover,
+    > a:focus {
+      color: var(--white);
+      background-color: var(--dark-navy);
+    }
+
+    .current-menu-item {
+      a {
+        color: var(--white);
+        background-color: var(--dark-navy);
+      }
+    }
   }
 }
 
 .book > ul > li.open {
-  > a,
-  > a:hover,
-  > a:focus,
-  > button {
-    color: #fff;
-    background-color: var(--dark-navy);
-  }
 
   li a {
-    color: var(--black);
+    background-color: var(--white);
+    color: var(--dark-navy);
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: var(--white);
       background-color: var(--dark-navy);
     }
   }
@@ -404,18 +431,15 @@
 .book .current {
   flex:auto;
   display: block;
-  padding: .5em;
-}
+  padding: 1.5rem;
 
-.book a:hover,
-.book a:focus {
-  background-color: #fff;
-  color: var(--black);
-  text-decoration: none;
+  @media (min-width: 1024px) {
+    padding: 0.75rem;
+  }
 }
 
 .book .current {
-  color: #000;
+  color: var(--dark-navy);
 }
 
 .book > ul > li > ul {
@@ -424,17 +448,17 @@
   list-style: none;
   left:0;
   right:0;
-  top:100%;
   padding:0;
   margin:0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .book > ul > li.open > ul {
   display:block;
-  border: 1px solid #fff;
+  border: 1px solid var(--dark-navy);
   margin-left: -1px;
   margin-right: -1px;
+  top: 100%;
 }
 
 .book > ul > li > ul a{
@@ -449,7 +473,7 @@
 }
 
 .book .menu-item-has-children button {
-  background-color: transparent;
+  background-color: var(--dark-navy);
   border: none;
   line-height: 1;
   padding: 3px;
@@ -489,3 +513,4 @@
 .book .menu-item-has-children:focus .arrow {
   transform: rotate(135deg) scale(.67);
 }
+

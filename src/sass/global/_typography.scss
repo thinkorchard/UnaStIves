@@ -43,6 +43,16 @@ h6 {
   letter-spacing: 14px;
 }
 
+.no-leading {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 4px;
+  }
+}
+
 .font-alt {
 	font-family: var(--font-alt);
 }

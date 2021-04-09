@@ -1,0 +1,46 @@
+{
+    "key": "group_60706f1d88e05",
+    "title": "Block: Campaign Monitor",
+    "fields": [
+        {
+            "key": "field_60706f1d9f81b",
+            "label": "Container Class",
+            "name": "container_class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "container | container-content | container-fluid",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "container\r\ncontainer-fluid\r\ncontainer-content",
+            "ign_set_data": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/campaign-monitor"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1617981257
+}

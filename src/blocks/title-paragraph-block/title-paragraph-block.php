@@ -13,7 +13,7 @@
 	$template = array(
 
 		array( 'core/heading', array(
-			'placeholder' => 'Add a long heading to introduce highlight content',
+			'placeholder' => 'Add a heading',
 		) ),
 
 		array( 'core/paragraph', array(

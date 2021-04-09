@@ -67,7 +67,7 @@ if ( ! $container ) {
 
    const sticky = document.querySelector('.sticky-menu');
    const section1 = document.querySelector('.hentry');
-   const revealMenu = gsap.fromTo(sticky, {autoAlpha: 0, left: -100, top: 50}, {duration: 1, autoAlpha: 1, left: 0});
+   const revealMenu = gsap.fromTo(sticky, {autoAlpha: 0, left: -100, bottom: 50}, {duration: 1, autoAlpha: 1, left: 0});
    ScrollTrigger.create({
        trigger: section1,
        animation: revealMenu,

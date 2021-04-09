@@ -1,0 +1,16 @@
+.acf-campaign-monitor {
+  font-size: 1.4rem;
+
+  .js-cm-form {
+    justify-content: center;
+  }
+  //input
+  .cm-input {
+    flex: 1 1 auto;
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    background: white;
+    min-width: 32rem;
+  }
+}

@@ -28,9 +28,7 @@ get_header(); ?>
 
 
                             <ul class="sub-menu">
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo get_the_permalink(get_top_ancestor_id()); ?><!--">--><?php //echo get_the_title(get_top_ancestor_id()); ?><!--</a>-->
-<!--                                </li>-->
+
 					            <?php
 
 						            $args = array(

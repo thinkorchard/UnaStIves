@@ -88,10 +88,12 @@ Array.prototype.forEach.call(menuItems, function(el, i){
             this.parentNode.className = "menu-item-has-children open";
             this.parentNode.querySelector('a').setAttribute('aria-expanded', "true");
             this.parentNode.querySelector('button').setAttribute('aria-expanded', "true");
+            event.preventDefault();
         } else {
             this.parentNode.className = "menu-item-has-children";
             this.parentNode.querySelector('a').setAttribute('aria-expanded', "false");
             this.parentNode.querySelector('button').setAttribute('aria-expanded', "false");
+            event.preventDefault();
         }
         event.preventDefault();
     });
