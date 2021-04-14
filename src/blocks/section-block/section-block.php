@@ -26,21 +26,7 @@
         padding-bottom:  8rem;
 
     }
-    <?php if ( $section_bg ) :
-    echo '#' . $block_id . ' .button-una'; ?> {
-        color: var(--white);
-    }
 
-    <?php echo '#' . $block_id . ' .button-una'; ?>:hover,
-    <?php echo '#' . $block_id . ' .button-una:active'; ?>,
-    <?php echo '#' . $block_id . ' .button-una:focus'; ?> {
-         color: var(--black) !important;
-    }
-
-    <?php echo '#' . $block_id . ' .button-una'; ?>  {
-        border-color: var(--white);
-    }
-    <?php endif; ?>
     <?php if ( $section_bg_img ) : echo '#' . $block_id; ?> {
         background-image: url(<?php echo $section_bg_img; ?>);
         background-repeat:  no-repeat;
@@ -49,8 +35,30 @@
     }
     <?php endif; ?>
 
-    <?php if ( $section_bg == '#60a5ff' ) : echo '#' . $block_id . ' a:not(.button)'; ?> {
+    <?php if ( $section_bg != '#ffffff' ) : echo '#' . $block_id . ' a'; ?> {
         color: var(--white);
+    }
+    <?php endif; ?>
+
+    <?php if (  $section_bg == '' ) : echo '#' . $block_id . ' a'; ?> {
+        color: var(--dark-navy);
+    }
+    <?php echo '#' . $block_id . ' a:hover ' . '#' . $block_id . ' a:focus'; ?> {
+        color: var(--white);
+    }
+    <?php endif; ?>
+    <?php if ( $section_bg != '#ffffff' ) : echo '#' . $block_id . ' .button-una:hover, ' . '#' . $block_id . ' .button-una:focus'; ?> {
+        background-color: var(--light-blue);
+    }
+    <?php endif; ?>
+
+    <?php if ( $section_bg == '' ) : echo '#' . $block_id . ' .button-una:hover, ' . '#' . $block_id . ' .button-una:focus'; ?> {
+        color: var(--white);
+    }
+    <?php endif; ?>
+
+    <?php if ( $section_bg == '#282c51' ) : echo '#' . $block_id . ' .button-una'; ?> {
+        border-color: var(--white);
     }
     <?php endif; ?>
 </style>

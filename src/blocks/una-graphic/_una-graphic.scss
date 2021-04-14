@@ -4,4 +4,9 @@
   h3 {
     margin-top: 3rem;
   }
+
+  a:not(.button) {
+    color: var(--black);
+    text-decoration: none;
+  }
 }

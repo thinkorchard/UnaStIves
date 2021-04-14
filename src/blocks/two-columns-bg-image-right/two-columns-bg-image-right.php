@@ -16,28 +16,6 @@
 	$title_2 = get_field( 'column_2_image_title' );
 
 	$col_2_image_bg = wp_get_attachment_image_url( $col_2_image, $image_size );
-
-	$template = array(
-
-		array( 'core/heading', array(
-		    'level' => 3,
-			'placeholder' => 'Add a heading level 3',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-		array( 'core/heading', array(
-			'level' => 3,
-			'placeholder' => 'Add a heading level 3',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-	);
 ?>
 
 <style type="text/css">
@@ -52,12 +30,11 @@
     }
     <?php endif; ?>
 </style>
-
 <section <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
 		<div class="span-6 col-1">
 			<div class="text-container">
-				<?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
+				<InnerBlocks />
 			</div>
 			<!-- /.text-container -->
 

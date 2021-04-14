@@ -176,9 +176,6 @@
 .dropdown .menu a,
 .dropdown .menu ul a {
   display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   text-transform: uppercase;
   color: var(--black);
   font-size: 1.8rem;

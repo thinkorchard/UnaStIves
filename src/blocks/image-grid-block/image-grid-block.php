@@ -46,15 +46,13 @@
             <div class="span-12">
 		        <?php if ( $img_1_link_type == 'page' ) : ?>
 			        <?php $post1 = $image_one_link; ?>
-			        <?php setup_postdata( $post1 ); ?>
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php echo $post1; ?>">
 
 				        <?php if ( $image_one ) : ?>
 					        <?php echo wp_get_attachment_image( $image_one, $size ); ?>
 				        <?php endif; ?>
                         <h3><?php echo $img_1_title; ?></h3>
                     </a>
-			        <?php wp_reset_postdata(); ?>
 		        <?php elseif ( $img_1_link_type == 'document' ) : ?>
                     <a href="<?php echo esc_url( $doc_1_link ); ?>">
 
@@ -68,15 +66,13 @@
             <div class="span-12">
 	            <?php if ( $img_2_link_type == 'page' ) : ?>
 		            <?php $post2 = $image_two_link; ?>
-		            <?php setup_postdata( $post2 ); ?>
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php echo $post2; ?>">
 
 			            <?php if ( $image_two ) : ?>
 				            <?php echo wp_get_attachment_image( $image_two, $size ); ?>
 			            <?php endif; ?>
                         <h3><?php echo $img_2_title; ?></h3>
                     </a>
-		            <?php wp_reset_postdata(); ?>
 	            <?php elseif ( $img_2_link_type == 'document' ) : ?>
                     <a href="<?php echo esc_url( $doc_2_link ); ?>">
 
@@ -94,13 +90,12 @@
         <div class="span-6 three" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_three, $size ); ?>); background-size: cover; background-position: center;">
 	        <?php if ( $img_3_link_type == 'page' ) : ?>
 		        <?php $post3 = $image_three_link; ?>
-		        <?php setup_postdata( $post3 ); ?>
-                <a href="<?php the_permalink(); ?>">
+
+                <a href="<?php echo $post3; ?>">
 
 
                     <h3><?php echo $img_3_title; ?></h3>
                 </a>
-		        <?php wp_reset_postdata(); ?>
 	        <?php elseif ( $img_3_link_type == 'document' ) : ?>
                 <a href="<?php echo esc_url( $doc_3_link ); ?>">
 			        <h3><?php echo $img_3_title; ?></h3>

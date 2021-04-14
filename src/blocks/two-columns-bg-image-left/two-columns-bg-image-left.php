@@ -18,27 +18,6 @@
 
 	$col_1_image_bg = wp_get_attachment_image_url( $col_1_image, $image_size );
 
-	$template = array(
-
-		array( 'core/heading', array(
-		    'level' => 3,
-			'placeholder' => 'Add a heading level 3',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-		array( 'core/heading', array(
-			'level' => 3,
-			'placeholder' => 'Add a heading level 3',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-	);
 ?>
 
 <style type="text/css">
@@ -63,7 +42,7 @@
 		<!-- /.col-left -->
 		<div class="span-6 col-2">
             <div class="text-container">
-				<?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
+				<InnerBlocks />
             </div>
             <!-- /.text-container -->
 		</div>

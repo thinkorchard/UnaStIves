@@ -81,7 +81,7 @@
             "key": "field_60479f461ccb1",
             "label": "Image One Link",
             "name": "image_one_link",
-            "type": "post_object",
+            "type": "page_link",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -102,9 +102,8 @@
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "allow_archives": 1,
+            "multiple": 0
         },
         {
             "key": "field_604b40f8eb306",
@@ -212,7 +211,7 @@
             "key": "field_60479f801ccb4",
             "label": "Image Two Link",
             "name": "image_two_link",
-            "type": "post_object",
+            "type": "page_link",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -233,9 +232,8 @@
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "allow_archives": 1,
+            "multiple": 0
         },
         {
             "key": "field_604b4214289b3",
@@ -343,7 +341,7 @@
             "key": "field_60479fbf1ccb7",
             "label": "Image Three Link",
             "name": "image_three_link",
-            "type": "post_object",
+            "type": "page_link",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -364,9 +362,8 @@
             "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "allow_archives": 1,
+            "multiple": 0
         },
         {
             "key": "field_604b4261289b4",
@@ -436,5 +433,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615545058
+    "modified": 1618242446
 }

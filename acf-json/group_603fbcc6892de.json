@@ -21,6 +21,28 @@
             "endpoint": 0
         },
         {
+            "key": "field_60745f3b23820",
+            "label": "Page Header Title",
+            "name": "page_header_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "",
+            "ign_set_data": ""
+        },
+        {
             "key": "field_603fbd0654461",
             "label": "Header Type",
             "name": "header_type",
@@ -224,5 +246,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1617017064
+    "modified": 1618240967
 }

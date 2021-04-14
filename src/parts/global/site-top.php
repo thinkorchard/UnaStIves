@@ -63,6 +63,7 @@
 		$header_type = get_field('header_type');
 		$page_header_image = get_field( 'page_header_image' );
 		$page_header_image_size = 'full';
+		$page_header_title = get_field( 'page_header_title' );
 
 		if ( $header_type == 'image' ) : ?>
         <div class="site-top-container">
@@ -92,7 +93,14 @@
 
             </div>
             <!-- /.image-container -->
-        <h1><?php the_title(); ?></h1>
+        <h1><?php
+            if ( $page_header_title ) :
+                echo $page_header_title;
+            else:
+                the_title(); endif;
+            ?>
+        </h1>
+
 
         </div>
         <?php elseif ( $header_type == 'video' ) : ?>
@@ -124,7 +132,13 @@
 
 	            // Display customized HTML.
 	            echo $iframe; ?>
-                <h1><?php the_title(); ?></h1>
+                <h1><?php
+			            if ( $page_header_title ) :
+				            echo '$page_header_title';
+			            else:
+				            the_title(); endif;
+		            ?>
+                </h1>
             </div>
             <?php elseif ( $header_type == 'slider' ) : ?>
 

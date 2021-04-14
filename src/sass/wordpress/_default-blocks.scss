@@ -13,35 +13,12 @@
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-#page .wp-block-gallery{
-	@extend .grid;
-	padding: 0;
+.blocks-gallery-grid, .wp-block-gallery {
+  justify-content: center;
 
-	li{
-		padding: 0;
-	}
-
-	&.columns-1{
-		@extend .span-all-12;
-	}
-	&.columns-2{
-		@extend .span-all-6;
-	}
-
-	&.columns-3{
-		@extend .span-all-4;
-	}
-
-	&.columns-4{
-		@extend .span-all-3;
-	}
-
-	.blocks-gallery-item{
-		width: 100%;
-		margin: 0;
-		height: 300px;
-	}
-
+  img {
+    object-fit: contain !important;
+  }
 }
 
 
