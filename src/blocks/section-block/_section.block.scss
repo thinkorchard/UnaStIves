@@ -1,11 +1,34 @@
 .acf-section-block {
 
+  padding-top:  8rem;
+  padding-bottom:  8rem;
+
+  h2:first-child {
+    margin-bottom: 0;
+
+    + p,
+    + div {
+      margin-top: 3rem;
+    }
+  }
+
+  .acf-section-block {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &.alignfull {
     p {
       margin: 1.5rem auto;
     }
 
     h2 + p {
+      font-size: 2rem;
+    }
+  }
+
+  &.alignwide {
+    h2:first-child + p {
       font-size: 2rem;
     }
   }

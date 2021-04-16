@@ -94,6 +94,7 @@
             </div>
             <!-- /.image-container -->
         <h1><?php
+
             if ( $page_header_title ) :
                 echo $page_header_title;
             else:
@@ -134,7 +135,7 @@
 	            echo $iframe; ?>
                 <h1><?php
 			            if ( $page_header_title ) :
-				            echo '$page_header_title';
+				            echo $page_header_title;
 			            else:
 				            the_title(); endif;
 		            ?>

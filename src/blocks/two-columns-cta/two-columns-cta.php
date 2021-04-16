@@ -33,38 +33,36 @@
         background-color: <?php echo $col_2_bg; ?>;
     }
 	<?php endif; ?>
-    <?php if ( $col_order == 'column2'  ) : echo '#' . $block_id . ' .col-1'; ?>  {
-        order: 2;
+    @media (min-width: 768px) {
+        <?php if ( $col_order == 'column2'  ) : echo '#' . $block_id . ' .col-1'; ?> {
+            order: 2;
+        }
+        <?php endif; ?>
     }
-    <?php endif; ?>
 </style>
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
-		<div class="span-6 col-1">
+		<div class="span-6 small-span-12 col-1">
             <?php
 	            $post1 = $cta_1_url;
-	            setup_postdata( $post1 )
             ?>
-			<a href="<?php the_permalink(); ?>">
+			<a href="<?php echo esc_url( $post1 ); ?>">
 			<?php if ( $title_1 ) : ?>
 				<h3 class="h2"><?php echo $title_1; ?></h3>
 			<?php endif; ?>
 			</a>
-            <?php wp_reset_postdata(); ?>
 		</div>
 		<!-- /.col-left -->
-		<div class="span-6 col-2">
+		<div class="span-6 small-span-12 col-2">
 			<?php
 				$post2 = $cta_2_url;
-				setup_postdata( $post2 )
 			?>
-			<a href="<?php the_permalink(); ?>">
+			<a href="<?php echo esc_url( $post2 ); ?>">
 				<?php if ( $title_2 ) : ?>
 					<h3 class="h2"><?php echo $title_2; ?></h3>
 				<?php endif; ?>
 			</a>
-			<?php wp_reset_postdata(); ?>
 		</div>
 		<!-- /.col-right -->
 	</div>

@@ -1,0 +1,87 @@
+{
+    "key": "group_607840452c66c",
+    "title": "Block: Two Columns Inline Image Left",
+    "fields": [
+        {
+            "key": "field_60784045481cf",
+            "label": "Column 2 Background Colour",
+            "name": "column_2_background_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_607840454bdd1",
+            "label": "Column 1 Image",
+            "name": "column_1_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60785c7fe8c5e",
+            "label": "Image Position",
+            "name": "image_position",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "placeholder": "left | right",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "autocomplete": "left\r\nright",
+            "ign_set_data": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/two-cols-inline-image-left"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1618500975
+}

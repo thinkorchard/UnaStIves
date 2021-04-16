@@ -10,6 +10,17 @@
     background-repeat: no-repeat;
     min-height: 40rem;
     padding: 5rem;
+    position: relative;
+
+    .h2,
+    .h3 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--white);
+      margin-bottom: 0;
+    }
   }
 
   [class^="span"] {
@@ -20,13 +31,18 @@
       max-width: unset;
     }
 
-
     @media (min-width: 768px) {
 
       &.col-2 {
         display: flex;
         justify-content: flex-start;
         flex-basis: 50%;
+
+        h2,
+        h3 {
+          margin-bottom: 2rem;
+          letter-spacing: 8px;
+        }
 
         .text-container {
           max-width: 30rem;
@@ -55,5 +71,10 @@
       }
     }
 
+  }
+
+  &.alignwide {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

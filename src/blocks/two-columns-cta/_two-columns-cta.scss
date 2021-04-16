@@ -3,7 +3,7 @@
   .grid {
     grid-gap: 0;
   }
-  [class^="span-6"] {
+  [class^="span-6 small-span-12"] {
     min-height: 40rem;
 
     position: relative;
@@ -19,6 +19,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
     }
   }
 }

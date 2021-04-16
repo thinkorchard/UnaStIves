@@ -14,9 +14,9 @@
 	$col_class = '';
 
 	if ( $col_no === 'two' ) {
-	    $col_class = 'span-6';
+	    $col_class = 'span-6 small-span-12';
     } elseif ( $col_no === 'three' ) {
-	    $col_class = 'span-4';
+	    $col_class = 'span-4 small-span-12';
     }
 ?>
 
@@ -34,7 +34,7 @@
                 <?php if ( $column_image ) : ?>
                     <?php echo wp_get_attachment_image( $column_image, $size ); ?>
                 <?php endif; ?>
-                <h4><?php the_sub_field( 'column_title' ); ?></h4>
+                <h3><?php the_sub_field( 'column_title' ); ?></h3>
                 <?php  ?>
 
                 </a>

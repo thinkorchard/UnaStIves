@@ -16,24 +16,7 @@
 	$col_bg_colour = get_field( 'column_background_colour' );
 	$content_align = get_field( 'content_alignment' );
 	$size = 'large';
-	$template = array(
 
-		array( 'core/heading', array(
-		        'level' => 3,
-			'placeholder' => 'Add a heading 3',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-		array( 'core/paragraph', array(
-			'placeholder' => 'Add a short paragraph',
-		) ),
-
-        array( 'acf/una-button' ),
-
-	);
 ?>
 
 <style type="text/css">
@@ -50,7 +33,7 @@
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
-		<div class="span-6 grid grid-images">
+		<div class="span-6 small-span-12 grid grid-images">
 			<div class="span-12 one" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_one, $size ); ?>); background-size: cover;">
                 <?php if ( $img_1_title ) : ?>
                 <h3 class="h2">
@@ -70,9 +53,9 @@
 
 		</div>
 		<!-- /.span-6 -->
-		<div class="span-6 background">
+		<div class="span-6 small-span-12 background">
             <div class="text-container">
-	            <?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
+	            <?php echo '<InnerBlocks />'; ?>
             </div>
             <!-- /.text-container -->
 		</div>

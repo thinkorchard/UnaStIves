@@ -22,9 +22,6 @@
     <?php echo '#' . $block_id; ?> {
         /* Add styles that use ACF values here */
         <?php if ( $section_bg ) : ?>background-color: <?php echo $section_bg; endif; ?>;
-        padding-top:  8rem;
-        padding-bottom:  8rem;
-
     }
 
     <?php if ( $section_bg_img ) : echo '#' . $block_id; ?> {

@@ -42,7 +42,7 @@
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
-        <div class="span-6 grid order">
+        <div class="span-6 small-span-12 grid order">
             <div class="span-12">
 		        <?php if ( $img_1_link_type == 'page' ) : ?>
 			        <?php $post1 = $image_one_link; ?>
@@ -87,7 +87,7 @@
 
         </div>
         <!-- /.span-6 -->
-        <div class="span-6 three" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_three, $size ); ?>); background-size: cover; background-position: center;">
+        <div class="span-6 small-span-12 three" style="background-image: url(<?php echo wp_get_attachment_image_url( $image_three, $size ); ?>); background-size: cover; background-position: center;">
 	        <?php if ( $img_3_link_type == 'page' ) : ?>
 		        <?php $post3 = $image_three_link; ?>
 

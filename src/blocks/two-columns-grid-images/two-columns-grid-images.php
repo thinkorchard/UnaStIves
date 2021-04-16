@@ -41,13 +41,13 @@
 
 <div <?php ign_block_attrs( $block ); ?>>
 	<div class="grid">
-		<div class="span-6 col-1">
+		<div class="span-6 small-span-12 col-1">
 			<?php if ( $title_1 ) : ?>
 				<h3 class="h2"><?php echo $title_1; ?></h3>
 			<?php endif; ?>
 		</div>
 		<!-- /.col-left -->
-		<div class="span-6 col-2">
+		<div class="span-6 small-span-12 col-2">
 			<?php if ( $title_2 ) : ?>
 				<h3 class="h2"><?php echo $title_2; ?></h3>
 			<?php endif; ?>

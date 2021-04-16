@@ -72,7 +72,7 @@
             "key": "field_604f4a61be54d",
             "label": "Column 1 URL",
             "name": "column_1_url",
-            "type": "post_object",
+            "type": "page_link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -82,16 +82,11 @@
                 "id": ""
             },
             "admin_only": 0,
-            "ign_set_data": "",
-            "post_type": [
-                "page",
-                "post"
-            ],
+            "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "allow_archives": 1,
+            "multiple": 0
         },
         {
             "key": "field_604f4a45be54c",
@@ -154,7 +149,7 @@
             "key": "field_604f4a8abe54e",
             "label": "Column 2 URL",
             "name": "column_2_url",
-            "type": "post_object",
+            "type": "page_link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -164,16 +159,11 @@
                 "id": ""
             },
             "admin_only": 0,
-            "ign_set_data": "",
-            "post_type": [
-                "page",
-                "post"
-            ],
+            "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "allow_archives": 1,
+            "multiple": 0
         },
         {
             "key": "field_604f4ee22b86d",
@@ -233,5 +223,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615810362
+    "modified": 1618504727
 }
