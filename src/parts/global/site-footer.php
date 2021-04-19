@@ -19,8 +19,7 @@
 
 
     <div class="site-info gutters text-center">
-        <a target="_blank" href="<?php echo esc_url( 'https://thinkorchard.com/' ); ?>"><?php printf( __(
-				'© %s Created by %s @ ThinkOrchard. Proudly powered by %s', 'una' ), date( 'Y' ), 'Andy Brooks', 'WordPress' ); ?></a>
+        <span class="has-white-color">&copy; <?php echo Date('Y'); ?> Derringtons Ltd, Hyde Park House, 5 Manfred Road, London. Company Number: 08104021. Registered in England &amp; Wales.</span>
     </div><!-- .site-info -->
 
 </div>

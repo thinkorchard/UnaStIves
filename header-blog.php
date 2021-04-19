@@ -42,5 +42,5 @@
     <div id="page" class="site">
 
 	    <?php locate_template('src/parts/global/site-top-blog.php', true, true); ?>
-	    <a id="site-content-skip" class="screen-reader-skip">-</a>
+	    <a id="site-content-skip" class="screen-reader-text">-</a>
         <div id="site-content" class="site-content">

@@ -4,8 +4,8 @@
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail( 'medium' );
 			}
-			$offer_date = get_field( 'offer_start_date', $post->ID );
-			echo '<span class="offer-date">' . $offer_date . '</span>';
+//			$offer_date = get_field( 'offer_start_date', $post->ID );
+//			echo '<span class="offer-date">' . $offer_date . '</span>';
 		?>
 	</div>
 

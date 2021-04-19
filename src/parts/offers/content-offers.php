@@ -17,7 +17,7 @@
 
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="entry-content container grow-font entry-content-events">
+		<div class="entry-content container-content grow-font entry-content-events">
             <div class="event-meta flex-grid">
                 <?php if ( $offer_start_date ) : ?>
                     <div class="span-12">

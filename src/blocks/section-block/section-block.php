@@ -37,7 +37,7 @@
     }
     <?php endif; ?>
 
-    <?php if (  $section_bg == '' ) : echo '#' . $block_id . ' a'; ?> {
+    <?php if (  $section_bg == '' ) : echo '#' . $block_id . ' a:not(.button--dark)'; ?> {
         color: var(--dark-navy);
     }
     <?php echo '#' . $block_id . ' a:hover ' . '#' . $block_id . ' a:focus'; ?> {
