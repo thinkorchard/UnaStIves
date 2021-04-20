@@ -9,46 +9,10 @@
 	 * a block is considered a header block if its name starts with header-
 	 */
 
-	$event_start_date = get_field( 'event_start_date' );
-	$event_start_time = get_field( 'event_start_time' );
-	$event_end_date = get_field( 'event_end_date' );
-	$event_end_time = get_field( 'event_end_time' );
-	$event_location = get_field( 'event_location' );
-	$event_speakers = get_field( 'event_speakers' );
 
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="entry-content container grow-font entry-content-events">
-            <div class="event-meta flex-grid">
-                <?php if ( $event_start_date ) : ?>
-                    <div class="span-4">
-                    <p class="h4">
-	                    <?php _e( 'Time', 'una' ) ?>
-                    </p>
-                    <p><span><?php echo $event_start_date; ?></span>, <span><?php if ( $event_start_time ) { echo $event_start_time; } ?></span><?php if ( $event_end_time ) : ?><span> - <?php echo $event_end_time; ?></span><?php endif; ?></p>
-                    </div>
-                    <!-- /.span-4 -->
-                <?php endif; ?>
-	            <?php if ( $event_location ) : ?>
-                    <div class="span-4">
-                        <p class="h4">
-                            <?php _e( 'Location', 'una' ) ?>
-                        </p>
-                        <p><?php echo $event_location; ?></p>
-                    </div>
-                    <!-- /.span-4 -->
-	            <?php endif; ?>
-	            <?php if ( $event_speakers ) : ?>
-                    <div class="span-4">
-                        <p class="h4">
-				            <?php _e( 'Speakers', 'una' ) ?>
-                        </p>
-                        <p><?php echo $event_speakers; ?></p>
-                    </div>
-                    <!-- /.span-4 -->
-	            <?php endif; ?>
-            </div>
-            <!-- /.event-meta -->
+		<div class="entry-content container-content grow-font entry-content-events">
 			<?php the_content(); ?>
 		</div>
 	</article>

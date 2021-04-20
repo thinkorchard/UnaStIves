@@ -13,4 +13,10 @@
     background: white;
     min-width: 32rem;
   }
+
+  .button {
+    @media (max-width: $media-small) {
+      min-width: 32rem;
+    }
+  }
 }

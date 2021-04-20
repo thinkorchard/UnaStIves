@@ -18,15 +18,6 @@
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="entry-content container-content grow-font entry-content-events">
-            <div class="event-meta flex-grid">
-                <?php if ( $offer_start_date ) : ?>
-                    <div class="span-12">
-                    <p><span><?php echo $offer_start_date; ?></span> <span><?php if ( $offer_start_time ) { echo $offer_start_time; } ?></span><?php if ( $offer_end_time ) : ?><span> - <?php echo $offer_end_time; ?></span><?php endif; ?><?php if ( $offer_end_date ) : ?><span> - <?php echo $offer_end_date; ?></span><?php endif; ?></p>
-                    </div>
-                    <!-- /.span-4 -->
-                <?php endif; ?>
-            </div>
-            <!-- /.event-meta -->
 			<?php the_content(); ?>
             <div class="book-now">
                 <a class="button una-button button--dark" href="<?php echo $book_now_url; ?>"><?php _e( 'Book Now', 'una' ) ?></a>

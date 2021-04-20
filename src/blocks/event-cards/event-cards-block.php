@@ -22,8 +22,8 @@
 
 ?>
 
-<section <?php ign_block_attrs( $block ); ?>>
-	<div class="card-listing <?php echo esc_attr( $container ); ?>">
+<div <?php ign_block_attrs( $block ); ?>>
+	<div class="card-listing">
 		<div class="<?php echo esc_attr( get_field( 'grid_class' ) ); ?> cards-holder events-holder">
 			<?php
 				$cards = new WP_Query( array(
@@ -45,4 +45,4 @@
 
 		</div>
 	</div>
-</section>
+</div>

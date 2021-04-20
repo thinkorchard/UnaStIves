@@ -24,7 +24,7 @@
 
 ?>
 <div <?php ign_block_attrs( $block ); ?>>
-	<div class="title-para container">
+	<div class="title-para">
 
 		<?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
 

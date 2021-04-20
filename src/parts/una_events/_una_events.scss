@@ -99,3 +99,12 @@
     }
   }
 }
+
+@media (max-width: $media-small) {
+  .acf-event-cards.alignwide,
+  .acf-offers-cards.alignwide,
+  .acf-image-grid-block.alignwide,
+  .acf-plan-your-stay.alignwide {
+    width: 100%;
+  }
+}

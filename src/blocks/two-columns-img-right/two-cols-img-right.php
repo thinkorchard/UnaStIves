@@ -31,7 +31,7 @@
 </style>
 
 <div <?php ign_block_attrs( $block ); ?>>
-    <div class="flex-grid">
+    <div class="grid">
         <div class="span-6 col-left">
             <div class="text-container">
                 <h2><?php echo $col_1_title; ?></h2>

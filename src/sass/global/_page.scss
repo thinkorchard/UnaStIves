@@ -219,6 +219,7 @@ body {
     transform: translate(-50%, -50%);
     color: #fff;
     margin: 0;
+    min-width: 34rem;
 
     @media (min-width: 576px) {
       font-size: 5rem;
@@ -441,4 +442,8 @@ body {
       }
     }
   }
+}
+ /* Extra Responsive Styles */
+@media (max-width: $media-small) {
+
 }

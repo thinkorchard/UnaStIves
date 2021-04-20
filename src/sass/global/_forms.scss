@@ -84,6 +84,11 @@ input[type="checkbox"] {
 .btn, .button, input[type="submit"] {
   border: 1px solid var(--dark-navy);
   display: inline-block;
+
+  @media (max-width: $media-small) {
+    display: block;
+    text-align: center;
+  }
   text-transform: uppercase;
   background: transparent;
   padding: 1.5rem;

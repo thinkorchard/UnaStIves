@@ -26,7 +26,7 @@
 
 ?>
 <div <?php ign_block_attrs( $block ); ?>>
-	<div class="title-button <?php echo esc_attr( $container ); ?>">
+	<div class="title-button">
 
 		<?php echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="all" />'; ?>
 
