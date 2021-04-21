@@ -15,7 +15,7 @@
   }
 
   .button {
-    @media (max-width: $media-small) {
+    @media (max-width: 576px) {
       min-width: 32rem;
     }
   }

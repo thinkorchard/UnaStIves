@@ -123,6 +123,7 @@
 		            'hd'        => 1,
                     'muted'     => 1,
                     'autoplay'  => 1,
+                    'loop'      => 1,
 	            );
 	            $new_src = add_query_arg($params, $src);
 	            $iframe = str_replace($src, $new_src, $iframe);
@@ -181,11 +182,12 @@
 		                echo '</div>';
 		                echo '<div class="swiper-pagination"></div>';
 		            echo '</div>';
+		        echo '</div>';
 		        endif;
         endif; ?>
         </div>
 
-</div>
+
 <!-- site-top -->
 <script>
     window.addEventListener("scroll", function(){
@@ -194,3 +196,4 @@
         navWrapper.classList.toggle("sticky", window.scrollY > 0);
     })
 </script>
+

@@ -2,7 +2,7 @@
 
   padding-top:  8rem;
   padding-bottom:  8rem;
-  @media (max-width: $media-small) {
+  @media (max-width: 576px) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -24,16 +24,6 @@
   &.alignfull {
     p {
       margin: 1.5rem auto;
-    }
-
-    h2 + p {
-      font-size: 2rem;
-    }
-  }
-
-  &.alignwide {
-    h2:first-child + p {
-      font-size: 2rem;
     }
   }
 

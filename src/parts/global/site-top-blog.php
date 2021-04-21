@@ -98,7 +98,7 @@
         </div>
     <?php endif; ?>
 
-</div>
+
 <!-- site-top -->
 <script>
     window.addEventListener("scroll", function(){

@@ -10,7 +10,7 @@
     letter-spacing: unset;
     margin: 1rem;
 
-    @media (max-width: $media-small) {
+    @media (max-width: 576px) {
       margin: 1rem 0;
     }
   }
@@ -18,7 +18,7 @@
   .card-meta {
     margin: .5rem 1rem;
 
-    @media (max-width: $media-small) {
+    @media (max-width: 576px) {
       margin: .5rem 0;
     }
   }
@@ -44,7 +44,7 @@
 .acf-section-block.alignfull .type-post.card-item p{
   max-width: calc(100% - 2rem);
 
-  @media (max-width: $media-small) {
+  @media (max-width: 576px) {
     max-width: (100%);
   }
 }

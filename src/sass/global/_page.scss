@@ -201,7 +201,7 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-color: var(--dark-navy);
 
   /* Center slide text vertically */
@@ -233,12 +233,18 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .wpgmza_map {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.wpgmza-infowindow {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .social {
