@@ -1,4 +1,4 @@
-<article id="post-<?php echo get_the_ID(); ?>" <?php post_class( 'card-item' ); ?>>
+<article id="post-<?php echo get_the_ID(); ?>" <?php post_class( 'card-item span-4' ); ?>>
 	<div class="header-image cover-image">
 		<?php
 		if ( has_post_thumbnail() ) {

@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Post Card design
 --------------------------------------------------------------*/
+.card-grid {
+  --card-min: 350px;
+}
 .post.card-item,
 .type-post.card-item {
   background-color: var(--white);

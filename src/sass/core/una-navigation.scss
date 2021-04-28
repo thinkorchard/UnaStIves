@@ -12,8 +12,12 @@
 
   .site-logo {
     color: white;
-    width: 10rem;
+    width: 14rem;
     margin-top: 1.25rem;
+
+    @media (max-width: 539px) {
+      margin-left: 5rem;
+    }
 
     @media (min-width: 540px) {
       transform: translateX(50%);
@@ -42,7 +46,7 @@
     height: 10rem;
 
     .site-logo {
-      width: 10rem;
+      width: 14rem;
 
       @media (min-width: 1367px) {
         width: 14rem !important;
@@ -383,8 +387,8 @@
   a {
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     background-color: var(--dark-navy);
     color: var(--white);
   }
@@ -424,7 +428,7 @@
 .book .current {
   flex:auto;
   display: block;
-  padding: 1.5rem;
+  padding: 1rem .5rem;
 
   @media (min-width: 1024px) {
     padding: 0.75rem;
@@ -506,4 +510,3 @@
 .book .menu-item-has-children:focus .arrow {
   transform: rotate(135deg) scale(.67);
 }
-
