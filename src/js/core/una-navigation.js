@@ -117,3 +117,49 @@ Array.prototype.forEach.call(menuItems, function(el, i){
         });
     });
 });
+
+gsap.registerPlugin(ScrollTrigger)
+
+function initPinSteps() {
+    ScrollTrigger.create({
+        trigger: ".site-top",
+        start: 'top +=10',
+        end: 99999,
+        scrub: true,
+        toggleClass: {className: 'site-navigation-wrapper--sticky', targets: '.site-navigation-wrapper'}
+    });
+
+    ScrollTrigger.matchMedia({
+        //tablet up
+        "(min-width: 768px": function() {
+            ScrollTrigger.create({
+                trigger: ".site-top",
+                start: 'top +=10',
+                end: 99999,
+                scrub: true,
+                toggleClass: {className: 'site-navigation-wrapper--sticky', targets: '.site-navigation-wrapper'}
+            });
+        },
+        // Mobile
+        "(max-width: 767px": function() {
+            ScrollTrigger.create({
+                trigger: ".site-top",
+                start: 'top bottom',
+                end: 99999,
+                scrub: true,
+                toggleClass: {className: 'site-navigation-wrapper--sticky', targets: '.site-navigation-wrapper'}
+            });
+        },
+    })
+}
+
+
+
+function init() {
+    // start here
+    initPinSteps()
+}
+
+window.addEventListener("load", function () {
+    init()
+})

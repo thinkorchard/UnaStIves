@@ -1,7 +1,4 @@
 .site-navigation-wrapper {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,26 +6,28 @@
   padding: 1.5rem;
   z-index: var(--z-index-top);
   transition: background-color 0.6s;
+  background-color: var(--dark-navy);
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 1rem;
+  }
+
+  > div {
+      min-width: 10rem;
+  }
+
+  .holder {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   .site-logo {
     color: white;
-    width: 14rem;
+    width: 10rem;
     margin-top: 1.25rem;
 
-    @media (max-width: 539px) {
-      margin-left: 5rem;
-    }
 
-    @media (min-width: 540px) {
-      transform: translateX(50%);
-
-    }
-
-    @media (min-width: 1367px) {
-      transition: 0.6s;
-      transform: translateX(50%);
-      width: 18rem;
-    }
 
     svg, path, g {
       fill: #fff; //uses color above
@@ -40,19 +39,12 @@
     }
   }
 
-  &.sticky {
+  &--sticky {
     position: fixed;
-    background: var(--dark-navy);
-    height: 10rem;
+    height: 8rem;
 
     .site-logo {
-      width: 14rem;
-
-      @media (min-width: 1367px) {
-        width: 14rem !important;
-        transition: 0.6s;
-        transform: translateX(50%);
-      }
+      width: 10rem;
     }
   }
 }
@@ -391,6 +383,18 @@
     letter-spacing: 2px;
     background-color: var(--dark-navy);
     color: var(--white);
+
+    @media (max-width: 767px) {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    button {
+      display: none;
+    }
   }
 
   &.open {
@@ -443,7 +447,7 @@
   display: none;
   position:absolute;
   list-style: none;
-  left:0;
+  left:-4rem;
   right:0;
   padding:0;
   margin:0;

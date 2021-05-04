@@ -36,7 +36,7 @@
 		</div>
 		<!-- /.col-left -->
 		<div class="span-6 col-2">
-            <form action="#" id="widgetForm" method="post" name="widgetForm">
+            <!--<form action="#" id="widgetForm" method="post" name="widgetForm">
                 <fieldset>
                     <div class="ui-icon-lb ui-btn-corner-all ui-header ui-bar-w ui-header-fixed slidedown" data-position="fixed" data-role="header" data-theme="w" role="banner">
                         <div class="ui-select"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flags en-GB" data-iconpos="notext" data-theme="w" data-inline="false" data-mini="false" title="UK English" class="ui-btn ui-btn-up-w ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">UK English</span><span class="ui-icon ui-icon-flags en-GB ui-icon-shadow">&nbsp;</span></span><select data-icon="flags en-GB" data-iconpos="notext" id="lang" name="lang"><option selected="selected" value="en-GB">UK English</option><option value="de-CH">Deutsch - CHE</option><option value="de-DE">Deutsch - DE</option><option value="de-AT">Deutsch - AUT</option><option value="da-DK">Dansk</option><option value="es-ES">Español</option><option value="fi-FI">Suomi</option><option value="fr-FR">Français</option><option value="nl-NL">Nederlands</option><option value="nb-NO">Norsk</option><option value="sv-SE">Svenska</option><option value="en-US">US English</option>
@@ -104,7 +104,8 @@
                         <input id="logMetricsId" name="logMetricsId" type="hidden" value="c369c942-0d84-47f3-9b45-de799ecda694">
                     </div>
 
-            </form>
+            </form>-->
+            <iframe src="https://booking.resdiary.com/widget/Standard/UnaKitchen/24732?" allowtransparency="true" frameborder="0" style="width:100%; border:none; max-width: 540px; height: 740px; "></iframe>
 		</div>
 		<!-- /.col-right -->
 	</div>

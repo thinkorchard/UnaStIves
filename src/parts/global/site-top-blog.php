@@ -100,10 +100,3 @@
 
 
 <!-- site-top -->
-<script>
-    window.addEventListener("scroll", function(){
-        let header = document.querySelector(".site-top");
-        let navWrapper = document.querySelector(".site-navigation-wrapper")
-        navWrapper.classList.toggle("sticky", window.scrollY > 0);
-    })
-</script>

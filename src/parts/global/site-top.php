@@ -38,22 +38,25 @@
         <!-- site-navigation__nav-holder -->
 
 	    <?php echo ign_logo(); ?>
+        <div class="holder">
+            <div class="booking-wrapper">
 
-        <div class="booking-wrapper">
+                <nav class="book"
+                     aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
 
-            <nav class="book"
-                 aria-label="<?php _e( 'Book', 'una' ); ?>" id="booking">
-
-			    <?php wp_nav_menu( array(
-				    'menu_class' => 'menu-booking',
-				    'theme_location' => 'book',
-				    'menu_id'        => 'book',
-				    'container'      => '',
-				    'fallback_cb'    => 'link_to_menu_editor',
-			    ) ); ?>
-            </nav>
+                    <?php wp_nav_menu( array(
+                        'menu_class' => 'menu-booking',
+                        'theme_location' => 'book',
+                        'menu_id'        => 'book',
+                        'container'      => '',
+                        'fallback_cb'    => 'link_to_menu_editor',
+                    ) ); ?>
+                </nav>
+            </div>
+            <!-- /.booking-wrapper -->
         </div>
-        <!-- /.booking-wrapper -->
+        <!-- /.holder -->
+
 
 
     </div>
@@ -189,11 +192,5 @@
 
 
 <!-- site-top -->
-<script>
-    window.addEventListener("scroll", function(){
-        let header = document.querySelector(".site-top");
-        let navWrapper = document.querySelector(".site-navigation-wrapper")
-        navWrapper.classList.toggle("sticky", window.scrollY > 0);
-    })
-</script>
+
 

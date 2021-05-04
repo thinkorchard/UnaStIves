@@ -22,8 +22,4 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .card-content -->
 
-    <div class="card-meta">
-		<?php ign_posted_on(); ?>
-    </div>
-
 </article><!-- #post-## -->

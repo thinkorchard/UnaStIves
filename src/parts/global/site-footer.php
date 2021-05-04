@@ -19,7 +19,7 @@
 
 
     <div class="site-info gutters text-center">
-        <span class="has-white-color">&copy; <?php echo Date('Y'); ?> Derringtons Ltd, Hyde Park House, 5 Manfred Road, London. Company Number: 08104021. Registered in England &amp; Wales.</span>
+        <span class="has-white-color">&copy; <?php echo Date('Y'); ?> Registered Address: KINGFISHER UNA RESORT LIMITED. Hyde Park House, 5 Manfred Road, London, United Kingdom, SW15 2RS.  Company Number: 08104021. Registered in England &amp; Wales.</span>
     </div><!-- .site-info -->
 
 </div>
