@@ -3,6 +3,13 @@
   .grid {
     grid-gap: 0;
   }
+
+  .col-1 {
+    .h2 {
+      background: rgba(40,44,81,.3);
+      box-shadow: 1px 5px 13px rgb(40 44 81 / 10%);
+    }
+  }
   [class^="span-6 small-span-12"] {
     min-height: 40rem;
 

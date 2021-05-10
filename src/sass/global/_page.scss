@@ -47,6 +47,8 @@ body {
     text-align: center;
     font-size: 2.4rem;
     letter-spacing: 8px;
+    background: rgba(40,44,81,.3);
+    box-shadow: 1px 5px 13px rgb(40 44 81 / 10%);
 
     @media (min-width: 768px) {
       font-size: 3.6rem;
@@ -226,6 +228,8 @@ body {
     color: #fff;
     margin: 0;
     min-width: 34rem;
+    background: rgba(40,44,81,.3);
+    box-shadow: 1px 5px 13px rgb(40 44 81 / 10%);
 
     @media (min-width: 576px) {
       font-size: 5rem;

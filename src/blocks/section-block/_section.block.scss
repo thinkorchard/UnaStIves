@@ -30,4 +30,8 @@
   .container-fluid {
     padding: 0;
   }
+
+  &.pb-0 {
+    padding-bottom: 0;
+  }
 }

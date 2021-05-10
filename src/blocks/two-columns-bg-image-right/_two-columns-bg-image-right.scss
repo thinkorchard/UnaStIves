@@ -2,12 +2,6 @@
   padding: 0;
   .grid {
     grid-gap: 0;
-
-    @media (max-width: 767px) {
-      .col-1 {
-        order: 2
-      }
-    }
   }
 
   .col-1,

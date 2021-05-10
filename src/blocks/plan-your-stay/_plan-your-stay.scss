@@ -11,8 +11,9 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
       text-align: center;
+      background: rgba(40,44,81,.3);
+      box-shadow: 1px 5px 13px rgb(40 44 81 / 10%);
     }
 
     a {
