@@ -72,7 +72,7 @@
 
 	//many rows has margin bottom and wraps
 	.grid {
-		flex-wrap: wrap;
+		flex-wrap: no-wrap;
 
 		& > * {
 			margin-bottom: var(--grid-gap);
