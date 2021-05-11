@@ -84,7 +84,7 @@ gsap.registerPlugin(ScrollTrigger)
 function initPinSteps() {
     ScrollTrigger.create({
         trigger: ".site-top",
-        start: 'top +=10',
+        start: 'bottom center',
         end: 99999,
         scrub: true,
         toggleClass: {className: 'site-navigation-wrapper--sticky', targets: '.site-navigation-wrapper'}
@@ -95,7 +95,7 @@ function initPinSteps() {
         "(min-width: 768px": function() {
             ScrollTrigger.create({
                 trigger: ".site-top",
-                start: 'top +=10',
+                start: 'bottom center',
                 end: 99999,
                 scrub: true,
                 toggleClass: {className: 'site-navigation-wrapper--sticky', targets: '.site-navigation-wrapper'}
